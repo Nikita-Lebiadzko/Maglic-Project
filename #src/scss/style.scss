@@ -1,5 +1,104 @@
 @import "./normalize.scss";
-@import "./_wr-home";
-@import "./_wr-services.scss";
+@import "./settings.scss";
+
+.wr-home {
+    background-image:
+    linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
+    url("../img/section-1.webp");
+    background-size: cover;
+    height: 100vh;
+
+header {
+    padding-top: 5px;
+    padding-bottom: 60px;
+    margin-bottom: 23vh;
+}
+.container-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo {
+    height: 76px;
+    width: 102px;
+    padding-top: 99px;
+}
+.nav {
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    padding-top: 76px;
+    text-transform: uppercase;
+}
+
+li {
+    margin-left: 31px;
+    list-style: none;
+}
+a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #fffefe;
+    text-decoration: none;
+}
+}
+
+.wr-home-container-custom {
+text-align: center;
+color: #fffefe;
 
 
+h2 {
+font-size: 72px;
+text-transform: uppercase;
+margin-bottom: 25px;
+}
+
+p {
+font-size: 20px;
+margin-bottom: 49px;
+}
+
+button {
+font-size: 24px;
+border: solid 2px;
+width: 217px;
+height: 54px;
+color: #fffefe;
+background-color: transparent; 
+}
+button:hover {
+background-color:  #fffefe;
+color: #555;
+}
+}
+
+
+// 2 section
+
+
+
+
+.wr-services {
+    background-image: url("../img/section-2.webp");
+    background-size: cover;
+    height: 100vh;
+
+.text-section {
+    width: 568px;
+    margin: 0 auto;
+    }
+    
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+p {
+    font-size: 16px;
+}
+.icon-services {
+}
+}
