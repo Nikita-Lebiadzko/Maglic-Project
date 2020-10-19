@@ -434,7 +434,6 @@ template {
   background-image: url("../img/section-2.webp");
   background-size: cover;
   height: 100vh;
-  text-align: center;
 }
 
 .wr-services .text-section {
@@ -451,6 +450,7 @@ template {
 .wr-services p {
   font-size: 16px;
   padding-bottom: 80px;
+  color: #6f6f6f;
 }
 
 .wr-services .service-icon {
