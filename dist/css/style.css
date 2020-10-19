@@ -341,12 +341,20 @@ template {
   display: none;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-right: 7px;
+}
+
 .wr-home {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("../img/section-1.webp");
   background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-1.webp");
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-1.webp");
   background-size: cover;
   height: 100vh;
+  text-align: center;
+  color: #fffefe;
 }
 
 .wr-home header {
@@ -355,10 +363,7 @@ template {
   margin-bottom: 23vh;
 }
 
-.wr-home .container-custom {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-right: 7px;
+.wr-home .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,23 +405,18 @@ template {
   text-decoration: none;
 }
 
-.wr-home-container-custom {
-  text-align: center;
-  color: #fffefe;
-}
-
-.wr-home-container-custom h2 {
+.wr-home h2 {
   font-size: 72px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
-.wr-home-container-custom p {
+.wr-home p {
   font-size: 20px;
   margin-bottom: 49px;
 }
 
-.wr-home-container-custom button {
+.wr-home button {
   font-size: 24px;
   border: solid 2px;
   width: 217px;
@@ -425,15 +425,9 @@ template {
   background-color: transparent;
 }
 
-.wr-home-container-custom button:hover {
+.wr-home button:hover {
   background-color: #fffefe;
   color: #555;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding-right: 7px;
 }
 
 .wr-services {
@@ -459,17 +453,25 @@ template {
   padding-bottom: 80px;
 }
 
-.wr-services .icon-services {
+.wr-services .service-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .wr-services svg {
-  width: 90px;
-  height: 90px;
-  border: 2px solid #ddd;
+  width: 35px;
+  height: 30px;
+}
+
+.wr-services .icons {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #d8d8d8;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -477,6 +479,7 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 22px;
+  background: #fff;
 }
 
 .wr-services button {
@@ -486,8 +489,4 @@ template {
   height: 54px;
   color: #fffefe;
   background-color: transparent;
-}
-
-.wr-services .icon-services {
-  padding-bottom: 100px;
 }
