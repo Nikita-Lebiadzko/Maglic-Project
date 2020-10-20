@@ -447,7 +447,7 @@ template {
   font-size: 30px;
 }
 
-.wr-services p {
+.wr-services .text-section p {
   font-size: 16px;
   padding-bottom: 80px;
   color: #6f6f6f;
@@ -457,6 +457,10 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
 }
 
 .wr-services svg {
@@ -480,6 +484,15 @@ template {
           justify-content: center;
   margin-bottom: 22px;
   background: #fff;
+}
+
+.wr-services .service-icon p {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.wr-services .service-btn {
+  text-align: center;
 }
 
 .wr-services button {
