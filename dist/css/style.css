@@ -430,6 +430,10 @@ template {
   color: #555;
 }
 
+body {
+  background-color: #fff;
+}
+
 .wr-services {
   background-image: url("../img/section-2.webp");
   background-size: cover;
@@ -439,7 +443,7 @@ template {
 .wr-services .text-section {
   width: 568px;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 25px;
 }
 
 .wr-services h3 {
@@ -449,7 +453,7 @@ template {
 
 .wr-services .text-section p {
   font-size: 16px;
-  padding-bottom: 80px;
+  padding-bottom: 5px;
   color: #6f6f6f;
 }
 
@@ -460,6 +464,7 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 60px;
   padding-bottom: 60px;
 }
 
@@ -469,8 +474,8 @@ template {
 }
 
 .wr-services .icons {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border: 2px solid #d8d8d8;
   border-radius: 50%;
   display: -webkit-box;
@@ -487,19 +492,26 @@ template {
 }
 
 .wr-services .service-icon p {
-  padding-left: 20px;
-  padding-right: 30px;
+  padding: 10px 20px 0 10px;
+  text-transform: uppercase;
 }
 
 .wr-services .service-btn {
   text-align: center;
 }
 
-.wr-services button {
+.wr-services .service-btn button {
   font-size: 24px;
   border: solid 2px;
-  width: 217px;
+  width: 250px;
   height: 54px;
   color: #fffefe;
   background-color: transparent;
+}
+
+.portfolio {
+  background: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  text-align: center;
+  color: #fffefe;
 }
