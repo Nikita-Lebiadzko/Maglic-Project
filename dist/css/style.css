@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,6 +342,38 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat/Montserrat/Montserrat-Regular.eot");
+  src: local("☺"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat/Montserrat-Bold.eot");
+  src: local("☺"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab-Regular";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Regular.eot");
+  src: local("☺"), url("../fonts/RobotoSlab/RobotoSlab-Regular.woff") format("woff"), url("fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab-Bold";
+  src: url("../fonts/RobotoSlab/RobotoSlab-Bold.eot");
+  src: local("☺"), url("../fonts/RobotoSlab/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -353,8 +386,10 @@ template {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-1.webp");
   background-size: cover;
   height: 100vh;
+  background-position: center;
   text-align: center;
   color: #fffefe;
+  min-width: 928px;
 }
 
 .wr-home header {
@@ -438,6 +473,7 @@ body {
   background-image: url("../img/section-2.webp");
   background-size: cover;
   height: 100vh;
+  min-width: 928px;
 }
 
 .wr-services .text-section {
@@ -510,8 +546,15 @@ body {
 }
 
 .portfolio {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
   width: 100%;
   text-align: center;
   color: #fffefe;
+}
+
+.portfolio .filter-tabs button {
+  border: solid 2px;
+  height: 54px;
+  color: #fffefe;
+  background-color: transparent;
 }
