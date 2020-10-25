@@ -343,33 +343,65 @@ template {
 }
 
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url("../fonts/Montserrat/Montserrat/Montserrat-Regular.eot");
-  src: local("☺"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-family: "CrimsonText";
+  src: url("../fonts/CrimsonText-Italic.ttf");
+  src: local("☺");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Montserrat-Bold";
-  src: url("../fonts/Montserrat/Montserrat-Bold.eot");
-  src: local("☺"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.ttf");
+  src: local("☺");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RobotoSlab-Regular";
-  src: url("../fonts/RobotoSlab/RobotoSlab-Regular.eot");
-  src: local("☺"), url("../fonts/RobotoSlab/RobotoSlab-Regular.woff") format("woff"), url("fonts/RobotoSlab-Regular.ttf") format("truetype");
+  font-family: "Montserrat-SemiBold";
+  src: url("../fonts/Montserrat-SemiBold.ttf");
+  src: local("☺");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RobotoSlab-Bold";
-  src: url("../fonts/RobotoSlab/RobotoSlab-Bold.eot");
-  src: local("☺"), url("../fonts/RobotoSlab/RobotoSlab-Bold.woff") format("woff"), url("../fonts/RobotoSlab/RobotoSlab-Bold.ttf") format("truetype");
+  font-family: "Montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  src: local("☺");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  src: local("☺");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+  src: local("☺");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-LightItalic";
+  src: url("../fonts/OpenSans-LightItalic.ttf");
+  src: local("☺");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  src: local("☺");
   font-weight: normal;
   font-style: normal;
 }
@@ -413,7 +445,7 @@ template {
 .wr-home .logo {
   height: 76px;
   width: 102px;
-  padding-top: 99px;
+  padding-top: 80px;
 }
 
 .wr-home .nav {
@@ -421,10 +453,13 @@ template {
 }
 
 .wr-home ul {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 76px;
+  padding-top: 60px;
   text-transform: uppercase;
 }
 
@@ -441,23 +476,34 @@ template {
 }
 
 .wr-home h2 {
+  font-family: "Lato-Black", sans-serif;
+  font-weight: 600;
   font-size: 72px;
   text-transform: uppercase;
   margin-bottom: 25px;
 }
 
 .wr-home p {
+  font-family: "OpenSans-Light", sans-serif;
+  font-weight: 100;
   font-size: 20px;
   margin-bottom: 49px;
+  opacity: 0.6;
 }
 
 .wr-home button {
+  font-family: "Montserrat-regular", sans-serif;
+  font-weight: 400;
   font-size: 24px;
-  border: solid 2px;
+  border: solid 3px rgba(128, 128, 128, 0.5);
   width: 217px;
   height: 54px;
   color: #fffefe;
   background-color: transparent;
+}
+
+.wr-home button span {
+  z-index: 20;
 }
 
 .wr-home button:hover {
@@ -473,7 +519,7 @@ body {
   background-image: url("../img/section-2.webp");
   background-size: cover;
   height: 100vh;
-  background-position: center;
+  background-position: top;
   min-width: 928px;
 }
 
@@ -484,11 +530,14 @@ body {
 }
 
 .wr-services h3 {
-  text-transform: uppercase;
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: 600;
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 .wr-services .text-section p {
+  font-family: "OpenSans-Light", sans-serif;
   font-size: 16px;
   padding-bottom: 15px;
   color: #6f6f6f;
@@ -529,7 +578,10 @@ body {
 }
 
 .wr-services .service-icon p {
-  padding: 10px 20px 0 10px;
+  font-family: "Montserrat-regular", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px 0 25px;
   text-transform: uppercase;
 }
 
@@ -548,7 +600,7 @@ body {
 }
 
 .portfolio {
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   position: absolute;
   width: 100%;
   height: 295px;
@@ -557,9 +609,42 @@ body {
   color: #fffefe;
 }
 
+.portfolio h6 {
+  font-family: "Montserrat-bold", sans-serif;
+  font-size: 24px;
+  margin: 30px 0 20px;
+}
+
+.portfolio p {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 18px;
+  opacity: 0.7;
+  padding-bottom: 35px;
+}
+
+.portfolio .hummer {
+  fill: #fffefe;
+}
+
 .portfolio .filter-tabs button {
+  font-family: "Montserrat-regular", sans-serif;
+  font-size: 11px;
   border: solid 2px;
-  height: 54px;
+  height: 38px;
   color: #fffefe;
   background-color: transparent;
+  margin-left: 30px;
+}
+
+.portfolio .filter-tabs button:hover {
+  border-color: #eeb013;
+}
+
+.portfolio .btn-text {
+  font-size: 11px;
+  width: 160px;
+}
+
+.portfolio .more-btn {
+  width: 60px;
 }
