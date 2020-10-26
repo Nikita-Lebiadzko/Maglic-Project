@@ -648,3 +648,24 @@ body {
 .portfolio .more-btn {
   width: 60px;
 }
+
+.portfolio-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: -56px;
+}
+
+.portfolio-section .portfolio-img {
+  width: 25%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.portfolio-section img {
+  width: 480px;
+  height: 350px;
+  display: block;
+}
