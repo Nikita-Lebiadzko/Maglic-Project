@@ -1,40 +1,34 @@
-body {
-    background-color: #fff;
-}
+
 .wr-services {
-    background-image: url("../img/section-2.webp");
+    background-image: url("../img/section-2.jpg");
     background-size: cover;
-    height: 100vh;
     background-position: top;
-    min-width: 928px;
-    
-    
+    text-align: center;
+    height: 100vh;
 .text-section {
-    width: 568px;
-    margin: 0 auto;
-    padding-top: 25px;
+  
     }
     
 h3 {
-    font-family: "Montserrat-bold", sans-serif;
+    font-family: "Montserrat-bold, sans-serif";
     font-weight: 600;
     font-size: 30px;
     text-transform: uppercase;
-   
+    margin-bottom: 60px;
+    padding-top: 45px;
 }
 .text-section p {
-    font-family:"OpenSans-Light", sans-serif;
+    font-family: "OpenSans-Light, sans-serif";
     font-size: 16px;
-    padding-bottom: 15px;
     color: #6f6f6f;
-   
+    margin-bottom: 50px;
 }
 .service-icon {
     display: flex;
     justify-content: center;
-    margin-left: 60px;
-    padding-bottom: 120px;
+    margin-bottom: 160px;
 }
+
 svg {
     width: 35px;
     height: 30px;
@@ -48,46 +42,45 @@ svg {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 22px;
     background: #fff;
 }
 .service-icon p {
-    font-family:"Montserrat-regular", sans-serif;
+    font-family:"Montserrat-regular, sans-serif";
     font-weight:600;
     font-size: 14px;
-    padding: 10px 20px 0 25px;
     text-transform: uppercase;
 }
 
-.service-btn {
-    text-align: center;
-    padding-bottom: 50px;
-}
-.service-btn button {
+.service-btn  {
     font-size: 24px;
     border: solid 2px;
     width: 250px;
     height: 54px;
     color: #fffefe;
     background-color: transparent; 
+    margin-bottom: 50px;
+}
+.service-btn:hover {
+    background-color:  #fffefe;
+    color: #555;
+    cursor: pointer;
 }
 }
+
 .portfolio {
     background: rgba(255, 255, 255, 0.2);
-    position: absolute;
-    width: 100%;
-    height: 295px;
-    left: 0;
     text-align: center;
     color: #fffefe;
+    padding-bottom: 20px;
 
 h6 {
-    font-family:"Montserrat-bold", sans-serif ;
+    font-family:"Montserrat-bold, sans-serif";
     font-size: 24px;
-    margin: 30px 0 20px;
+    margin-bottom: 20px;
 }
+
 p {
-    font-family:"OpenSans-Light", sans-serif;
+    font-family:"OpenSans-Light, sans-serif";
     font-size: 18px;
     opacity: 0.7;
     padding-bottom: 35px;
@@ -97,9 +90,9 @@ p {
 }
 
 .filter-tabs button {
-    font-family:"Montserrat-regular", sans-serif;
+    font-family:"Montserrat-regular, sans-serif";
     font-size: 11px;
-    border: solid 2px;
+    border: solid 2px white;
     height: 38px;
     color: #fffefe;
     background-color: transparent;
@@ -107,9 +100,9 @@ p {
 }
 .filter-tabs button:hover {
    border-color: #eeb013;
+   cursor: pointer;
 }
 .btn-text {
-    font-size: 11px;
     width: 160px;
 } 
  .more-btn {
@@ -118,20 +111,32 @@ p {
 }
 
 .portfolio-section {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -56px;
-    overflow: hidden;
+   display: flex;
+   flex-wrap: wrap;
 
-.portfolio-img {
+a {
     width: 25%;
-    box-sizing:border-box;
-}
+    display: block;
+    position: relative;
+} 
+a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    transition:.4s;
+ }
+a:hover:after { 
+    opacity: 1;
+ }
 
 img {
-    width: 480px;
-    height: 350px;
-    display: block;
+    width: 100%;
+    height: 100%;
 }
 }
  
