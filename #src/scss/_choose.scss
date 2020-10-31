@@ -1,6 +1,6 @@
 .choose-section {
     text-align: center;
-    height: 100vh;
+    
 h5 {
     font-family:"Montserrat-bold, sans-serif";
     font-weight: 800;
@@ -8,6 +8,14 @@ h5 {
     padding-top: 50px;
     margin-bottom: 40px;
 }
+svg::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 80px;
+    background-color:#6f6f6f;
+    margin-right: 15px;
+  }
 .section-txt {
     font-family: "OpenSans-Light, sans-serif";
     font-weight: 100;
@@ -15,7 +23,33 @@ h5 {
     color: #6f6f6f;
     margin-bottom: 140px;
 }
-img {
+strong {
+    font-family: "Montserrat-bold, sans-serif";
+    font-size: 24px;
+}
+.paragraph-1 {
+    font-family: "Montserrat-regular, sans-serif";
+    font-weight: 400;
+    font-size: 14px;
+    color: #6f6f6f;
+    line-height: 2;
+    position: relative;
+}
+.paragraph-1::after {
+    content: "";
+      display: block;
+      height: 2px;
+      width: 80px;
+      background-color: #6f6f6f;
+      margin-top: 30px;
+}
+.paragraph-2 {
+    font-family: "OpenSans-Regular, sans-serif";
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.phone {
     position: relative;
     bottom: 145px;
     left: 75px;
@@ -26,7 +60,7 @@ svg {
     fill: #b6b6b6;
    }
 .text-mobile {
-    width: 640px;
+    width: 590px;
    }
 
 .mobile {
@@ -34,3 +68,12 @@ svg {
     display: flex;
 }
 }
+.features-section {
+    display: flex;
+
+
+div {
+ width: 25%;
+} 
+}
+

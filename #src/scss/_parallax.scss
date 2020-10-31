@@ -1,0 +1,34 @@
+.parallax-section {
+        background-image:
+        linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
+        url("../img/section-3.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        text-align: center;
+        height: 320px;
+        color: #fff;
+
+.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        margin-bottom: 50px;
+       }
+svg {
+        width: 56px;
+        height: 3px;
+        fill: #fff;
+       }
+.figures {
+        font-family: "Montserrat-regular, sans-serif";
+        font-weight: 600;
+        font-size: 48px;
+        margin-bottom: 30px;
+}
+.text {
+        font-family: "Montserrat-bold, sans-serif";
+        font-weight: 800;
+        font-size: 18px;
+}
+}

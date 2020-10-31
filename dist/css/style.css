@@ -694,7 +694,6 @@ body {
 
 .choose-section {
   text-align: center;
-  height: 100vh;
 }
 
 .choose-section h5 {
@@ -705,6 +704,15 @@ body {
   margin-bottom: 40px;
 }
 
+.choose-section svg::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 80px;
+  background-color: #6f6f6f;
+  margin-right: 15px;
+}
+
 .choose-section .section-txt {
   font-family: "OpenSans-Light, sans-serif";
   font-weight: 100;
@@ -713,7 +721,37 @@ body {
   margin-bottom: 140px;
 }
 
-.choose-section img {
+.choose-section strong {
+  font-family: "Montserrat-bold, sans-serif";
+  font-size: 24px;
+}
+
+.choose-section .paragraph-1 {
+  font-family: "Montserrat-regular, sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f6f6f;
+  line-height: 2;
+  position: relative;
+}
+
+.choose-section .paragraph-1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 80px;
+  background-color: #6f6f6f;
+  margin-top: 30px;
+}
+
+.choose-section .paragraph-2 {
+  font-family: "OpenSans-Regular, sans-serif";
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.choose-section .phone {
   position: relative;
   bottom: 145px;
   left: 75px;
@@ -726,7 +764,7 @@ body {
 }
 
 .choose-section .text-mobile {
-  width: 640px;
+  width: 590px;
 }
 
 .choose-section .mobile {
@@ -734,4 +772,58 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.features-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features-section div {
+  width: 25%;
+}
+
+.parallax-section {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("../img/section-3.jpg");
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-3.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-3.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 320px;
+  color: #fff;
+}
+
+.parallax-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.parallax-section svg {
+  width: 56px;
+  height: 3px;
+  fill: #fff;
+}
+
+.parallax-section .figures {
+  font-family: "Montserrat-regular, sans-serif";
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.parallax-section .text {
+  font-family: "Montserrat-bold, sans-serif";
+  font-weight: 800;
+  font-size: 18px;
 }
