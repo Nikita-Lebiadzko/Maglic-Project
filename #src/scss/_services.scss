@@ -1,37 +1,46 @@
 
 .wr-services {
     background-image: url("../img/section-2.jpg");
-    background-size: cover;
     background-position: top;
     text-align: center;
-    height: 100vh;
+
 .text-section {
   
     }
+.container-custom {
+    max-width: 745px;
+    margin: 0 auto;
+}
     
 h3 {
     font-family: "Montserrat-bold, sans-serif";
     font-weight: 600;
     font-size: 30px;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-top: 45px;
+    text-align: left;
 }
 .text-section p {
     font-family: "OpenSans-Light, sans-serif";
     font-size: 16px;
     color: #6f6f6f;
     margin-bottom: 50px;
+    text-align: left;
 }
 .service-icon {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 160px;
 }
-
 svg {
-    width: 35px;
-    height: 30px;
+    width: 36px;
+    height: 32px;
+}
+
+.hummer {
+    width: 24px;
+    height: 21px;
 }
 
 .icons {
@@ -69,13 +78,13 @@ svg {
 
 .portfolio {
     background: rgba(255, 255, 255, 0.2);
-    text-align: center;
     color: #fffefe;
     padding-bottom: 20px;
 
 h6 {
     font-family:"Montserrat-bold, sans-serif";
     font-size: 24px;
+    padding-top: 30px;
     margin-bottom: 20px;
 }
 
