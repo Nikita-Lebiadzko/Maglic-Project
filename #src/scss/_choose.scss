@@ -17,18 +17,18 @@ svg::before{
     margin-right: 15px;
   }
 .section-txt {
-    font-family: "OpenSans-Light, sans-serif";
+    font-family: "OpenSans-Light", sans-serif;
     font-weight: 100;
     font-size: 18px;
     color: #6f6f6f;
     margin-bottom: 140px;
 }
 strong {
-    font-family: "Montserrat-bold, sans-serif";
+    font-family: "Montserrat-bold", sans-serif;
     font-size: 24px;
 }
 .paragraph-1 {
-    font-family: "Montserrat-regular, sans-serif";
+    font-family: "Montserrat-regular", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #6f6f6f;
@@ -44,7 +44,7 @@ strong {
       margin-top: 30px;
 }
 .paragraph-2 {
-    font-family: "OpenSans-Regular, sans-serif";
+    font-family: "OpenSans-Regular", sans-serif;
     font-weight: 600;
     font-size: 10px;
     text-transform: uppercase;
@@ -70,8 +70,6 @@ svg {
 }
 .features-section {
     display: flex;
-
-
 div {
  width: 25%;
 } 
