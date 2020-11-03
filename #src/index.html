@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 
     <title>Maglic</title>
@@ -49,8 +49,8 @@
                 </p>
             </div>
             <div class="service-icon">
-                <div class="icons">
-                    <svg>
+                <div class="container-icons">
+                    <svg class="icons">
                         <path class="cls" d="M4.486,11.684 L9.893,11.684 L14.914,22.814 L4.486,11.684 ZM18.078,24.606 L12.236,11.684 L23.920,11.684
                         L18.078,24.606 ZM9.943,9.541 L4.151,9.541 L8.972,3.112 L13.358,3.112 L9.943,9.541 ZM21.242,22.814 L26.263,11.684
                         L31.670,11.684 L21.242,22.814 ZM12.370,9.541 L15.785,3.112 L20.371,3.112 L23.786,9.541 L12.370,9.541 ZM26.213,9.541
@@ -61,8 +61,8 @@
                     </svg>
                 </div>
                 <p>UNIQUE DESIGN.</p>
-                <div class="icons">
-                    <svg>
+                <div class="container-icons">
+                    <svg class="icons">
                         <path class="cls" d=" M16.471,12.754 C16.471,13.055 16.237,13.290 15.936,13.290 C15.048,13.290 14.329,14.009 14.329,14.896
                         C14.329,15.198 14.094,15.432 13.793,15.432 C13.492,15.432 13.257,15.198 13.257,14.896
                         C13.257,13.425 14.463,12.219 15.936,12.219 C16.237,12.219 16.471,12.453 16.471,12.754
@@ -79,8 +79,8 @@
                     </svg>
                 </div>
                 <p>PHOTOGRAPHY</p>
-                <div class="icons">
-                    <svg>
+                <div class="container-icons">
+                    <svg class="icons">
                         <path class="cls" d="M19.857,10.553 L18.066,8.762 L22.970,3.857 L24.761,5.648 L19.857,10.553 ZM27.339,5.648
                         C27.339,5.364 27.239,5.096 27.038,4.895 L23.723,1.581 C23.523,1.379 23.255,1.281 22.970,1.281 
                         C22.686,1.281 22.418,1.379 22.217,1.581 L0.691,23.106 C0.490,23.308 0.389,23.575 0.389,23.860
@@ -100,20 +100,13 @@
         </div>
         <div class="portfolio">
             <h6>OUR WORKS</h6>
-            </svg>
+
             <svg class="hummer">
-                <path d="M7.297,0.688 L4.375,3.653 L1.940,6.125 L1.209,6.866 L-0.008,12.056 L1.209,13.291
-                         L10.463,3.901 L7.297,0.688 M20.588,2.955 C20.411,2.955 20.235,3.023 20.100,3.159
-                        L22.535,5.631 C22.804,5.359 22.804,4.913 22.536,4.642 L21.075,3.159 C20.941,3.023
-                        20.764,2.955 20.588,2.955 M3.401,2.955 C3.225,2.955 3.048,3.023 2.914,3.159 L1.453,4.642
-                        C1.185,4.913 1.185,5.359 1.453,5.631 L3.888,3.159 C3.755,3.023 3.577,2.955 3.401,2.955
-                        M15.961,7.361 L11.994,11.386 L8.028,7.361 L5.593,9.832 L9.559,13.858 L5.489,17.988
-                        C5.221,18.260 5.221,18.705 5.489,18.977 L6.951,20.460 C7.085,20.596 7.261,20.663
-                        7.438,20.663 C7.614,20.663 7.790,20.596 7.924,20.460 L11.994,16.329 L16.064,20.460
-                        C16.198,20.596 16.375,20.663 16.551,20.663 C16.727,20.663 16.904,20.596 17.038,20.460
-                        L18.499,18.977 C18.767,18.705 18.767,18.260 18.499,17.988 L14.429,13.858 
-                        L18.396,9.832 L15.961,7.361 M16.691,0.688 L13.525,3.901 L22.779,13.291 L23.997,12.056
-                        L22.779,6.866 L22.049,6.125 L19.613,3.653 L16.691,0.688 ">
+                <path
+                    d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
+                <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
+                <path class="line"
+                    d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p>Show Amazing Your Works</p>
             <div class="filter-tabs">
@@ -124,32 +117,129 @@
             </div>
         </div>
         <div class="portfolio-section">
-            <a href="#"><img src="./img/portfolio-1.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-2.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-3.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-4.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-5.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-6.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-7.jpg" alt=""></a>
-            <a href="#"><img src="./img/portfolio-8.jpg" alt=""></a>
+            <a href="#"><img src="./img/portfolio-1.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-2.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-3.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                        44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                        208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                        9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                        0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                        0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-4.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                        44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                        208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                        9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                        0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                        0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-5.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                        44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                        208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                        9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                        0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                        0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-6.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                        44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                        208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                        9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                        0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                        0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-7.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                        44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                        208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                        9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                        0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                        0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
+            <a href="#"><img src="./img/portfolio-8.jpg" alt="">
+                <div class="exp">
+                    <svg class="search" viewBox="0 0 512 512">
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
+                        44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208
+                        208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4
+                        9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7
+                        0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128
+                        0 70.7-57.2 128-128 128z">
+                        </path>
+                    </svg>
+                    <p>Crossfit : 15.4 Open Workout</p>
+                </div>
+            </a>
         </div>
     </section>
     <section class="choose-section">
         <div class="container">
             <h5>WHY CHOOSE US</h5>
             <svg class="hummer">
-                <path d="M7.297,0.688 L4.375,3.653 L1.940,6.125 L1.209,6.866 L-0.008,12.056 L1.209,13.291
-                             L10.463,3.901 L7.297,0.688 M20.588,2.955 C20.411,2.955 20.235,3.023 20.100,3.159
-                            L22.535,5.631 C22.804,5.359 22.804,4.913 22.536,4.642 L21.075,3.159 C20.941,3.023
-                            20.764,2.955 20.588,2.955 M3.401,2.955 C3.225,2.955 3.048,3.023 2.914,3.159 L1.453,4.642
-                            C1.185,4.913 1.185,5.359 1.453,5.631 L3.888,3.159 C3.755,3.023 3.577,2.955 3.401,2.955
-                            M15.961,7.361 L11.994,11.386 L8.028,7.361 L5.593,9.832 L9.559,13.858 L5.489,17.988
-                            C5.221,18.260 5.221,18.705 5.489,18.977 L6.951,20.460 C7.085,20.596 7.261,20.663
-                            7.438,20.663 C7.614,20.663 7.790,20.596 7.924,20.460 L11.994,16.329 L16.064,20.460
-                            C16.198,20.596 16.375,20.663 16.551,20.663 C16.727,20.663 16.904,20.596 17.038,20.460
-                            L18.499,18.977 C18.767,18.705 18.767,18.260 18.499,17.988 L14.429,13.858 
-                            L18.396,9.832 L15.961,7.361 M16.691,0.688 L13.525,3.901 L22.779,13.291 L23.997,12.056
-                            L22.779,6.866 L22.049,6.125 L19.613,3.653 L16.691,0.688 ">
+                <path
+                    d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
+                <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
+                <path class="line"
+                    d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Our Mission We build Amazing Website</p>
             <div class="mobile">
@@ -168,23 +258,42 @@
             <div class="features-section">
                 <div>
                     <img src="./img/icon-1.png" alt="">
-                    <p>Lorem, ipsum dolor.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dignissimos.</p>
+                    <p class="text-bold">TRENDING</p>
+                    <p class="text-regular">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece</p>
+                    <span></span>
                 </div>
                 <div>
                     <img src="./img/icon-2.png" alt="">
+                    <p class="text-bold">SMART SETTING</p>
+                    <p class="text-regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    </p>
+                    <span></span>
                 </div>
                 <div>
                     <img src="./img/icon-3.png" alt="">
+                    <p class="text-bold">POWERFUL ADMIN</p>
+                    <p class="text-regular">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece</p>
+                    <span></span>
                 </div>
                 <div>
                     <img src="./img/icon-4.png" alt="">
+                    <p class="text-bold">SLEPPING MODE</p>
+                    <p class="text-regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    </p>
                 </div>
                 <div>
                     <img src="./img/icon-5.png" alt="">
+                    <p class="text-bold">USER FRIENDLY</p>
+                    <p class="text-regular">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                        roots in a piece</p>
                 </div>
                 <div>
                     <img src="./img/icon-6.png" alt="">
+                    <p class="text-bold">AUTO BACKUP</p>
+                    <p class="text-regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    </p>
                 </div>
             </div>
         </div>
@@ -233,18 +342,11 @@
         <div class="container">
             <p class="team">MEET OUR TEAM</p>
             <svg class="hummer">
-                <path d="M7.297,0.688 L4.375,3.653 L1.940,6.125 L1.209,6.866 L-0.008,12.056 L1.209,13.291
-                 L10.463,3.901 L7.297,0.688 M20.588,2.955 C20.411,2.955 20.235,3.023 20.100,3.159
-                L22.535,5.631 C22.804,5.359 22.804,4.913 22.536,4.642 L21.075,3.159 C20.941,3.023
-                20.764,2.955 20.588,2.955 M3.401,2.955 C3.225,2.955 3.048,3.023 2.914,3.159 L1.453,4.642
-                C1.185,4.913 1.185,5.359 1.453,5.631 L3.888,3.159 C3.755,3.023 3.577,2.955 3.401,2.955
-                M15.961,7.361 L11.994,11.386 L8.028,7.361 L5.593,9.832 L9.559,13.858 L5.489,17.988
-                C5.221,18.260 5.221,18.705 5.489,18.977 L6.951,20.460 C7.085,20.596 7.261,20.663
-                7.438,20.663 C7.614,20.663 7.790,20.596 7.924,20.460 L11.994,16.329 L16.064,20.460
-                C16.198,20.596 16.375,20.663 16.551,20.663 C16.727,20.663 16.904,20.596 17.038,20.460
-                L18.499,18.977 C18.767,18.705 18.767,18.260 18.499,17.988 L14.429,13.858 
-                L18.396,9.832 L15.961,7.361 M16.691,0.688 L13.525,3.901 L22.779,13.291 L23.997,12.056
-                L22.779,6.866 L22.049,6.125 L19.613,3.653 L16.691,0.688 ">
+                <path
+                    d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
+                <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
+                <path class="line"
+                    d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">We Make Beautiful Template</p>
             <div class="avatar-section">
@@ -275,22 +377,64 @@
     <section class="testimonial">
         <p class="team">WHAT CLIENT SAY ?</p>
         <svg class="hummer">
-            <path d="M7.297,0.688 L4.375,3.653 L1.940,6.125 L1.209,6.866 L-0.008,12.056 L1.209,13.291
-             L10.463,3.901 L7.297,0.688 M20.588,2.955 C20.411,2.955 20.235,3.023 20.100,3.159
-            L22.535,5.631 C22.804,5.359 22.804,4.913 22.536,4.642 L21.075,3.159 C20.941,3.023
-            20.764,2.955 20.588,2.955 M3.401,2.955 C3.225,2.955 3.048,3.023 2.914,3.159 L1.453,4.642
-            C1.185,4.913 1.185,5.359 1.453,5.631 L3.888,3.159 C3.755,3.023 3.577,2.955 3.401,2.955
-            M15.961,7.361 L11.994,11.386 L8.028,7.361 L5.593,9.832 L9.559,13.858 L5.489,17.988
-            C5.221,18.260 5.221,18.705 5.489,18.977 L6.951,20.460 C7.085,20.596 7.261,20.663
-            7.438,20.663 C7.614,20.663 7.790,20.596 7.924,20.460 L11.994,16.329 L16.064,20.460
-            C16.198,20.596 16.375,20.663 16.551,20.663 C16.727,20.663 16.904,20.596 17.038,20.460
-            L18.499,18.977 C18.767,18.705 18.767,18.260 18.499,17.988 L14.429,13.858 
-            L18.396,9.832 L15.961,7.361 M16.691,0.688 L13.525,3.901 L22.779,13.291 L23.997,12.056
-            L22.779,6.866 L22.049,6.125 L19.613,3.653 L16.691,0.688 ">
+            <path
+                d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
+            <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
+            <path class="line" d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
         </svg>
-        <p class="section-txt">Our Happy Clients</p>
-        <div class="slider-avatar">
 
+        <p class="section-txt">Our Happy Clients</p>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./img/maaan.png" alt="">
+                    <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.”</p>
+                    <p><svg class="triangle">
+                            <path
+                                d="M158.663,11.676 L146.269,11.671 L152.471,1.674 L158.663,11.676 ZM152.491,25.038 L144.729,12.509 L160.222,12.517 L152.471,-0.004 L144.718,12.488 L136.976,-0.014 L168.026,0.000 L152.491,25.038 Z" />
+                            <path d="M0.000,6.999 L117.000,6.999 L117.000,7.999 L0.000,7.999 L0.000,6.999 Z" />
+                            <path d="M188.000,6.999 L305.000,6.999 L305.000,7.999 L188.000,7.999 L188.000,6.999 Z" />
+                        </svg>
+                    </p>
+                    <p class="text-midle">WHITE SHADOW WALKER</p>
+                    <p class="text-down">CEO/FOUNDER DELL</p>
+                </div>
+                <div class="swiper-slide"><img src="./img/maaan.png" alt="">
+                    <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.”</p>
+                    <p><svg class="triangle">
+                            <path
+                                d="M158.663,11.676 L146.269,11.671 L152.471,1.674 L158.663,11.676 ZM152.491,25.038 L144.729,12.509 L160.222,12.517 L152.471,-0.004 L144.718,12.488 L136.976,-0.014 L168.026,0.000 L152.491,25.038 Z" />
+                            <path d="M0.000,6.999 L117.000,6.999 L117.000,7.999 L0.000,7.999 L0.000,6.999 Z" />
+                            <path d="M188.000,6.999 L305.000,6.999 L305.000,7.999 L188.000,7.999 L188.000,6.999 Z" />
+                        </svg>
+                    </p>
+                    <p class="text-midle">WHITE SHADOW WALKER</p>
+                    <p class="text-down">CEO/FOUNDER DELL</p>
+                </div>
+                <div class="swiper-slide"><img src="./img/maaan.png" alt="">
+                    <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
+                        have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.”</p>
+                    <p><svg class="triangle">
+                            <path
+                                d="M158.663,11.676 L146.269,11.671 L152.471,1.674 L158.663,11.676 ZM152.491,25.038 L144.729,12.509 L160.222,12.517 L152.471,-0.004 L144.718,12.488 L136.976,-0.014 L168.026,0.000 L152.491,25.038 Z" />
+                            <path d="M0.000,6.999 L117.000,6.999 L117.000,7.999 L0.000,7.999 L0.000,6.999 Z" />
+                            <path d="M188.000,6.999 L305.000,6.999 L305.000,7.999 L188.000,7.999 L188.000,6.999 Z" />
+                        </svg>
+                    </p>
+                    <p class="text-midle">WHITE SHADOW WALKER</p>
+                    <p class="text-down">CEO/FOUNDER DELL</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination">
+            </div>
         </div>
         <div class="bottom-text">
             <div class="container">
@@ -303,63 +447,86 @@
         <div class="container">
             <p class="team">LATEST BLOG</p>
             <svg class="hummer">
-                <path d="M7.297,0.688 L4.375,3.653 L1.940,6.125 L1.209,6.866 L-0.008,12.056 L1.209,13.291
-             L10.463,3.901 L7.297,0.688 M20.588,2.955 C20.411,2.955 20.235,3.023 20.100,3.159
-            L22.535,5.631 C22.804,5.359 22.804,4.913 22.536,4.642 L21.075,3.159 C20.941,3.023
-            20.764,2.955 20.588,2.955 M3.401,2.955 C3.225,2.955 3.048,3.023 2.914,3.159 L1.453,4.642
-            C1.185,4.913 1.185,5.359 1.453,5.631 L3.888,3.159 C3.755,3.023 3.577,2.955 3.401,2.955
-            M15.961,7.361 L11.994,11.386 L8.028,7.361 L5.593,9.832 L9.559,13.858 L5.489,17.988
-            C5.221,18.260 5.221,18.705 5.489,18.977 L6.951,20.460 C7.085,20.596 7.261,20.663
-            7.438,20.663 C7.614,20.663 7.790,20.596 7.924,20.460 L11.994,16.329 L16.064,20.460
-            C16.198,20.596 16.375,20.663 16.551,20.663 C16.727,20.663 16.904,20.596 17.038,20.460
-            L18.499,18.977 C18.767,18.705 18.767,18.260 18.499,17.988 L14.429,13.858 
-            L18.396,9.832 L15.961,7.361 M16.691,0.688 L13.525,3.901 L22.779,13.291 L23.997,12.056
-            L22.779,6.866 L22.049,6.125 L19.613,3.653 L16.691,0.688 ">
+                <path
+                    d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
+                <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
+                <path class="line"
+                    d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Tell Your Story</p>
         </div>
         <div class="grid-blog">
             <div><img src="./img/grid-1.jpg" alt=""></div>
             <div>
-                <p class="crimson">Brading design</p>
-                <p class="Montserrat">Leeds Juicery</p>
-                <p class="Regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                <p class="text-1">Brading design</p>
+                <p class="text-2">Leeds Juicery</p>
+                <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                <p class="Regular-black">READ MORE</p>
+                <a href=""><p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                    <path d="M313.941 216H12c-6.627 0-12 5.373-12
+                    12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
+                    21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
+                    9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
+                    16.971V216z"></path></svg></p>
+                </a>
             </div>
             <div><img src="./img/grid-2.jpg" alt=""></div>
             <div>
-                
-                <p class="crimson">Motion Graphic</p>
-                <p class="Montserrat">Hello Itaewon Project</p>
-                <p class="Regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                <p class="text-1">Motion Graphic</p>
+                <p class="text-2">Hello Itaewon Project</p>
+                <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                <p class="Regular-black">READ MORE</p>
+                <a href=""><p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                        <path d="M313.941 216H12c-6.627 0-12 5.373-12
+                        12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
+                        21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
+                        9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
+                        16.971V216z"></path></svg></p>
+                    </a>
             </div>
             <div>
-                <p class="crimson">Lookbook seasonal</p>
-                <p class="Montserrat">Brooklyn</p>
-                <p class="Regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                <p class="text-1">Lookbook seasonal</p>
+                <p class="text-2">Brooklyn</p>
+                <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                <p class="Regular-black">READ MORE</p>
+                <a href=""><p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                    <path d="M313.941 216H12c-6.627 0-12 5.373-12
+                    12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
+                    21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
+                    9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
+                    16.971V216z"></path></svg> </p>
+                </a>
             </div>
             <div><img src="./img/grid-3.jpg" alt=""></div>
             <div>
-                <p class="crimson">Photography</p>
-                <p class="Montserrat">Maxi Dress</p>
-                <p class="Regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                <p class="text-1">Photography</p>
+                <p class="text-2">Maxi Dress</p>
+                <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium,
                     totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                <p class="Regular-black">READ MORE</p>
+                <a href=""><p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                    <path d="M313.941 216H12c-6.627 0-12 5.373-12
+                    12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
+                    21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
+                    9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
+                    16.971V216z"></path></svg> </p>
+                </a>
             </div>
             <div><img src="./img/grid-4.jpg" alt=""></div>
         </div>
         </div>
     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/script.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous"></script>
-    <script src="./js/script.min.js"></script> -->
+        crossorigin="anonymous"></script> -->
+
 
 </body>
 

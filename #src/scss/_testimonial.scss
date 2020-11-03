@@ -1,33 +1,38 @@
 .testimonial {
     background-image:
-    linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
+    linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.2)),
     url("../img/section-6.jpg");
     background-size: cover;
     height: 100vh;
     background-position: top;
     text-align: center;
     color: #fff;
+    position: relative;
+    padding: 35px 0;
 
 .team {
     font-family: "Montserrat-bold",sans-serif;
     font-weight: 800;
     font-size: 18px;
-    padding-top: 35px;
-    margin: 0;
+    margin-bottom: 25px;
+    letter-spacing: 8px;
 }
 .section-txt {
     font-family: "OpenSans-LightItalic",sans-serif;
     font-size: 18px;
+    margin-bottom: 80px;
+    opacity: 0.8;
 }
-svg {
-    width: 24px;
-    height: 21px;
+.hummer {
     fill: #fff;
-    margin-top: 20px;
 }
 .bottom-text {
     background-color: #323232;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
     height: 100px;
+    padding: 15px 0;
 .container {
     display: flex;
     justify-content: space-between;
@@ -56,6 +61,52 @@ button {
 }    
 button:hover {
     cursor: pointer;
+    background-color: #eeb013;
+    color: #323232;
 }    
+}
+}
+.swiper-container {
+    width: 1000px;
+    height: 470px;
+    text-align: center;
+    
+img {
+    border: #eeb013 solid 6px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+} 
+.swiper-pagination > .swiper-pagination-bullet {
+    opacity: 1;
+    background-color: #fff;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+    background-color: #eeb013;
+}
+.triangle {
+    height: 30px;
+    fill: #fff;
+    margin-bottom: 10px;
+}
+.text-up {
+    font-family: "MyriadPro", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.text-midle {
+    font-family: "Montserrat-regular", sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+.text-down {
+    font-family: "OpenSans-Light", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    opacity: 0.6;
+}
+.text-midle,.text-down {
+    text-transform: uppercase;
 }
 }

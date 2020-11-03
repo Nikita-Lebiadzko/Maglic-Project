@@ -12,8 +12,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 50px;
-        margin-bottom: 50px;
+        padding: 40px 40px;
        }
 svg {
         width: 56px;
@@ -21,14 +20,14 @@ svg {
         fill: #fff;
        }
 .figures {
-        font-family: "Montserrat-regular", sans-serif;
-        font-weight: 600;
+        font-family: "Montserrat-regular", serif;
+        font-weight: 800;
         font-size: 48px;
         margin-bottom: 30px;
 }
 .text {
         font-family: "Montserrat-bold", sans-serif;
-        font-weight: 800;
+        font-weight: 600;
         font-size: 18px;
 }
 }

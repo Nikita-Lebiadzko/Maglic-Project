@@ -1,5 +1,8 @@
+
 .our-blog {
     text-align: center;
+    margin: 50px 0;
+ 
 .team {
     font-family: "Montserrat-bold",sans-serif;
     font-weight: 800;
@@ -7,16 +10,16 @@
 }
 .section-txt {
     font-family: "OpenSans-Light", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 18px;
     color: #6f6f6f;
-}    
-svg {
-    width: 24px;
-    height: 21px;
-    
-}    
+    margin-bottom: 60px;
 }
+}    
+.hummer {
+    fill: #6f6f6f;
+}  
+
 .grid-blog {
 display: flex;
 flex-wrap: wrap;
@@ -24,24 +27,28 @@ background-color: #eaeaea;
 div {
     width: 25%;
     height: 330px;
-
+a {
+    text-decoration: none;
+    color: #000;
+    
+}
 p { 
     text-align: left;
     padding-left: 40px;
 } 
 
-.crimson {
+.text-1 {
     font-family: "CrimsonText", serif;
     font-weight: 600;
     font-size: 14px;
     padding-top: 20px;
 }    
-.Montserrat {
+.text-2 {
     font-family: "Montserrat-regular",sans-serif;
     font-weight: 800;
     font-size: 18px;
 }
-.Regular {
+.text-3 {
     font-family: "Montserrat-regular",sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -49,11 +56,20 @@ p {
     padding-right: 40px;
     margin-bottom: 30%;
 }
-.Regular-black {
+.text-4 {
     font-family: "Montserrat-regular",sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 12px;
     padding-bottom: 10px;
+}
+.arrow {
+    width: 20px;
+    height: 10px;
+    padding: 0 20px;
+}
+
+.text-2, .text-4 {
+    text-transform: uppercase;
 }
    
 img {

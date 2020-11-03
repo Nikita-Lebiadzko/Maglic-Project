@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(../../node_modules/swiper/swiper-bundle.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -410,8 +411,25 @@ template {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro-Regular.ttf");
+  src: local("☺");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-color: #fff;
+}
+
+body .hummer {
+  height: 20px;
+  width: 220px;
+}
+
+body .hummer .line {
+  opacity: 0.3;
 }
 
 .container {
@@ -458,8 +476,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 80px 90px;
 }
 
 .wr-home li {
@@ -558,17 +575,16 @@ body {
   margin-bottom: 160px;
 }
 
-.wr-services svg {
+.wr-services .icons {
   width: 36px;
   height: 32px;
 }
 
 .wr-services .hummer {
-  width: 24px;
-  height: 21px;
+  fill: #fff;
 }
 
-.wr-services .icons {
+.wr-services .container-icons {
   width: 60px;
   height: 60px;
   border: 2px solid #d8d8d8;
@@ -614,13 +630,12 @@ body {
 .portfolio {
   background: rgba(255, 255, 255, 0.2);
   color: #fffefe;
-  padding-bottom: 20px;
+  padding: 25px 10px;
 }
 
 .portfolio h6 {
   font-family: "Montserrat-bold", sans-serif;
   font-size: 24px;
-  padding-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -670,6 +685,31 @@ body {
   width: 25%;
   display: block;
   position: relative;
+  z-index: 50;
+}
+
+.portfolio-section a:hover .exp {
+  z-index: 55;
+}
+
+.portfolio-section .exp {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  z-index: -10;
+}
+
+.portfolio-section .search {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+
+.portfolio-section p {
+  color: #fff;
 }
 
 .portfolio-section a:after {
@@ -699,11 +739,14 @@ body {
   text-align: center;
 }
 
+.choose-section .container {
+  padding: 40px 0;
+}
+
 .choose-section h5 {
-  font-family: "Montserrat-bold, sans-serif";
+  font-family: "Montserrat-bold", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  padding-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -760,9 +803,7 @@ body {
   left: 75px;
 }
 
-.choose-section svg {
-  width: 24px;
-  height: 21px;
+.choose-section .hummer {
   fill: #b6b6b6;
 }
 
@@ -781,10 +822,45 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 10px;
+}
+
+.features-section img {
+  padding: 20px 35px;
+  float: left;
 }
 
 .features-section div {
-  width: 25%;
+  width: 33%;
+  text-align: left;
+}
+
+.features-section div span::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 95%;
+  background-color: #6f6f6f;
+  opacity: 0.3;
+  margin: 20px 30px;
+}
+
+.features-section div .text-bold {
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.features-section div .text-regular {
+  font-family: "Montserrat-regular", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  color: #6f6f6f;
+  opacity: 0.6;
+  padding-bottom: 20px;
 }
 
 .parallax-section {
@@ -808,8 +884,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 50px;
-  margin-bottom: 50px;
+  padding: 40px 40px;
 }
 
 .parallax-section svg {
@@ -819,15 +894,15 @@ body {
 }
 
 .parallax-section .figures {
-  font-family: "Montserrat-regular", sans-serif;
-  font-weight: 600;
+  font-family: "Montserrat-regular", serif;
+  font-weight: 800;
   font-size: 48px;
   margin-bottom: 30px;
 }
 
 .parallax-section .text {
   font-family: "Montserrat-bold", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
 }
 
@@ -849,9 +924,7 @@ body {
   margin-bottom: 60px;
 }
 
-.our-team svg {
-  width: 24px;
-  height: 21px;
+.our-team .hummer {
   fill: #b6b6b6;
 }
 
@@ -876,10 +949,6 @@ body {
      object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.our-team img:hover {
-  cursor: pointer;
 }
 
 .our-team .avatar-text-1 {
@@ -941,7 +1010,7 @@ body {
   font-family: "Montserrat-regular", sans-serif;
   font-weight: 800;
   font-size: 14px;
-  border: solid 1px #6f6f6f;
+  border: solid 2px #6f6f6f;
   letter-spacing: 5px;
   background-color: transparent;
   width: 270px;
@@ -950,42 +1019,48 @@ body {
 
 .text-demo button:hover {
   cursor: pointer;
+  background-color: #6f6f6f21;
 }
 
 .testimonial {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("../img/section-6.jpg");
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-6.jpg");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-6.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.2))), url("../img/section-6.jpg");
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/section-6.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/section-6.jpg");
   background-size: cover;
   height: 100vh;
   background-position: top;
   text-align: center;
   color: #fff;
+  position: relative;
+  padding: 35px 0;
 }
 
 .testimonial .team {
   font-family: "Montserrat-bold",sans-serif;
   font-weight: 800;
   font-size: 18px;
-  padding-top: 35px;
-  margin: 0;
+  margin-bottom: 25px;
+  letter-spacing: 8px;
 }
 
 .testimonial .section-txt {
   font-family: "OpenSans-LightItalic",sans-serif;
   font-size: 18px;
+  margin-bottom: 80px;
+  opacity: 0.8;
 }
 
-.testimonial svg {
-  width: 24px;
-  height: 21px;
+.testimonial .hummer {
   fill: #fff;
-  margin-top: 20px;
 }
 
 .testimonial .bottom-text {
   background-color: #323232;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   height: 100px;
+  padding: 15px 0;
 }
 
 .testimonial .bottom-text .container {
@@ -1028,10 +1103,65 @@ body {
 
 .testimonial .bottom-text button:hover {
   cursor: pointer;
+  background-color: #eeb013;
+  color: #323232;
+}
+
+.swiper-container {
+  width: 1000px;
+  height: 470px;
+  text-align: center;
+}
+
+.swiper-container img {
+  border: #eeb013 solid 6px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.swiper-container .swiper-pagination > .swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #fff;
+}
+
+.swiper-container .swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: #eeb013;
+}
+
+.swiper-container .triangle {
+  height: 30px;
+  fill: #fff;
+  margin-bottom: 10px;
+}
+
+.swiper-container .text-up {
+  font-family: "MyriadPro", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.swiper-container .text-midle {
+  font-family: "Montserrat-regular", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.swiper-container .text-down {
+  font-family: "OpenSans-Light", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.swiper-container .text-midle, .swiper-container .text-down {
+  text-transform: uppercase;
 }
 
 .our-blog {
   text-align: center;
+  margin: 50px 0;
 }
 
 .our-blog .team {
@@ -1042,14 +1172,14 @@ body {
 
 .our-blog .section-txt {
   font-family: "OpenSans-Light", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   color: #6f6f6f;
+  margin-bottom: 60px;
 }
 
-.our-blog svg {
-  width: 24px;
-  height: 21px;
+.hummer {
+  fill: #6f6f6f;
 }
 
 .grid-blog {
@@ -1066,25 +1196,30 @@ body {
   height: 330px;
 }
 
+.grid-blog div a {
+  text-decoration: none;
+  color: #000;
+}
+
 .grid-blog div p {
   text-align: left;
   padding-left: 40px;
 }
 
-.grid-blog div .crimson {
+.grid-blog div .text-1 {
   font-family: "CrimsonText", serif;
   font-weight: 600;
   font-size: 14px;
   padding-top: 20px;
 }
 
-.grid-blog div .Montserrat {
+.grid-blog div .text-2 {
   font-family: "Montserrat-regular",sans-serif;
   font-weight: 800;
   font-size: 18px;
 }
 
-.grid-blog div .Regular {
+.grid-blog div .text-3 {
   font-family: "Montserrat-regular",sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1093,11 +1228,21 @@ body {
   margin-bottom: 30%;
 }
 
-.grid-blog div .Regular-black {
+.grid-blog div .text-4 {
   font-family: "Montserrat-regular",sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 12px;
   padding-bottom: 10px;
+}
+
+.grid-blog div .arrow {
+  width: 20px;
+  height: 10px;
+  padding: 0 20px;
+}
+
+.grid-blog div .text-2, .grid-blog div .text-4 {
+  text-transform: uppercase;
 }
 
 .grid-blog div img {

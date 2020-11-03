@@ -1,11 +1,13 @@
 .choose-section {
     text-align: center;
+.container {
+    padding: 40px 0;
+}    
     
 h5 {
-    font-family:"Montserrat-bold, sans-serif";
+    font-family:"Montserrat-bold", sans-serif;
     font-weight: 800;
     font-size: 18px;
-    padding-top: 50px;
     margin-bottom: 40px;
 }
 svg::before{
@@ -54,9 +56,7 @@ strong {
     bottom: 145px;
     left: 75px;
 }
-svg {
-    width: 24px;
-    height: 21px;
+.hummer {
     fill: #b6b6b6;
    }
 .text-mobile {
@@ -70,8 +70,43 @@ svg {
 }
 .features-section {
     display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+
+img {
+    padding: 20px 35px;
+    float: left;
+ }   
+
 div {
- width: 25%;
+    width: 33%;
+    text-align: left;
+
+span::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 95%;
+    background-color: #6f6f6f;
+    opacity: 0.3;
+    margin: 20px 30px;
+}
+
+.text-bold {
+    font-family: "Montserrat-bold", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}    
+.text-regular {
+    font-family: "Montserrat-regular", sans-serif;
+    font-weight: 200;
+    font-size: 13px;
+    color:#6f6f6f;
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
 } 
 }
 
