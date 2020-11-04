@@ -1114,9 +1114,13 @@ body .hummer .line {
 }
 
 .swiper-container img {
-  border: #eeb013 solid 6px;
+  border: transparent solid 6px;
   border-radius: 50%;
   margin-bottom: 10px;
+}
+
+.swiper-container .swiper-slide:hover img {
+  border: #eeb013 solid 6px;
 }
 
 .swiper-container .swiper-pagination > .swiper-pagination-bullet {
