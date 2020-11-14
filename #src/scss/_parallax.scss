@@ -14,11 +14,7 @@
         align-items: center;
         padding: 40px 40px;
        }
-svg {
-        width: 56px;
-        height: 3px;
-        fill: #fff;
-       }
+
 .figures {
         font-family: "Montserrat-regular", serif;
         font-weight: 800;
@@ -29,5 +25,13 @@ svg {
         font-family: "Montserrat-bold", sans-serif;
         font-weight: 600;
         font-size: 18px;
+}
+.text::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 70px;
+        background-color: #fff;
+        margin: 30px 45px;
 }
 }
