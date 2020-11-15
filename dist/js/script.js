@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+let mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     // loop: true,
       spaceBetween: 30,
@@ -9,3 +9,10 @@ var mySwiper = new Swiper('.swiper-container', {
       clickable: true,
     },
   })
+  let swiper = new Swiper('.swiper-header', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
