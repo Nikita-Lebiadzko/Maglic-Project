@@ -15,4 +15,8 @@ let mySwiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    pagination: {
+      el: '.swiper-pagination-header',
+      clickable: true,
+    },
   });

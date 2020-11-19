@@ -82,3 +82,20 @@ svg {
 }    
 }
 }
+
+
+@media (max-width: 1160px) {
+.last-footer {
+    min-width: 410px;
+p {
+    margin: 10px;
+}    
+    .footer-block-1, .footer-block-2, .footer-block-3 {
+    margin-right: 5px;
+    border: none;
+}  
+.container {
+    text-align: center;
+}  
+}    
+}

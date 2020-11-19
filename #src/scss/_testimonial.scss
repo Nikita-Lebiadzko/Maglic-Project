@@ -114,3 +114,46 @@ img {
     text-transform: uppercase;
 }
 }
+
+@media (max-width: 1155px) {
+.testimonial .bottom-text .container {
+    justify-content: space-around;
+}
+}
+@media (max-width: 1000px) {
+.testimonial {
+    min-width: 410px;
+.swiper-container {
+    width: 50%;
+    height: 65%;
+    text-align: center;
+}
+}  
+.testimonial .bottom-text .container p {
+    font-size: 12px;
+}
+}
+
+
+@media (max-width: 625px) {
+.testimonial .swiper-container {
+    height: 58%;
+.text-up {
+    font-size: 14px;
+}   
+.text-midle {
+    font-size: 10px;
+} 
+.text-down {
+    font-size: 8px;
+}
+.triangle {
+    display: none;
+}
+}
+.testimonial .bottom-text button {
+    font-size: 7px;
+    width: 100px;
+    height: 35px;
+}
+}

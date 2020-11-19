@@ -175,3 +175,44 @@ img {
 }
 }
  
+@media (max-width: 870px) {
+.wr-services {
+    min-width: 410px;
+h3 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 15px;
+}
+.text-section p {
+    font-size: 14px;
+}    
+.service-icon {
+    flex-direction: column;
+    margin-bottom: 15px;
+p {
+    margin-left: 0;
+}
+}
+.service-btn {
+    font-size: 12px;
+    width: 150px;
+    height: 35px;
+}
+.portfolio{
+    padding: 10px 10px;
+.filter-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 5px;   
+}
+p {
+    font-size: 11px;
+}
+button {
+    margin-bottom: 2px;
+}
+} 
+}
+}

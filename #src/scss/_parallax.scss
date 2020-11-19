@@ -35,3 +35,19 @@
         margin: 30px 45px;
 }
 }
+@media (max-width: 720px) {
+.parallax-section {
+        min-width: 410px;
+.container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 20px;
+}       
+.figures {
+        font-size: 22px;
+}
+.text {
+        font-size: 15px;
+}        
+}
+}
