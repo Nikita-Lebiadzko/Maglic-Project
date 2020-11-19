@@ -1,0 +1,124 @@
+.contact {
+    background-color:#1c1c1c;
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+}
+.container-contact {
+    display: flex;
+    align-items: center;
+p {
+    font-family: "OpenSans-Light",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    }
+}
+.contact-icon {
+    margin-right: 25px;
+    svg {
+    width: 25px;
+    height: 25px;
+    fill: #f6b138;
+    position: absolute;
+    margin-top: 25px;
+}
+}
+.contact-icon:after {   
+    content: '';
+    position: relative;
+    display: block;
+    left: 15%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: solid 2px #5b5b5b;
+} 
+.contact-icon-text {
+    color: #fff;
+}
+.form-contact {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    margin-bottom: 80px;
+
+input {
+    width: 95%;
+    height: 70px;
+    }
+input, textarea {
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #616161;
+}   
+}
+input::placeholder, textarea::placeholder {
+    font-family: "OpenSans-LightItalic", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.6;
+}
+.form-email, .form-name, .form-subject {
+    width: 25%;
+    margin-bottom: 85px;
+}
+.form-textaria {
+    width: 100%;
+
+textarea {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    box-sizing: border-box;
+    resize: none;
+    padding: 15px 0;
+    margin-bottom: 40px;
+ }
+}
+.form-button{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+button {
+    font-family: "OpenSans-LightItalic", sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 170px;
+    height: 50px;
+    border: solid 1px #fff;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 6px;
+    cursor: pointer;
+}  
+button:hover {
+    background-color: #eeb013;
+    }    
+}
+
+
+@media (max-width: 855px) {
+.contact {
+    min-width: 410px;
+}    
+.container {
+    flex-direction: column;
+.container-contact {
+    flex-direction: column;
+    margin-bottom: 35px;
+}    
+}
+}
