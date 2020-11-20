@@ -590,10 +590,11 @@ body .hummer .line {
     margin: 0 auto;
   }
   .wr-home ul {
-    display: none;
+    padding: 0;
   }
   .wr-home a {
     margin: 0 auto;
+    font-size: 5px;
   }
   .wr-home a img {
     margin: 0 auto;
@@ -606,10 +607,10 @@ body .hummer .line {
     height: 21px;
   }
   .swiper-slide h2 {
-    font-size: 20px;
+    font-size: 35px;
   }
   .swiper-slide p {
-    font-size: 5px;
+    font-size: 14px;
   }
   .swiper-header .swiper-button-next, .swiper-header .swiper-button-prev {
     display: none;
