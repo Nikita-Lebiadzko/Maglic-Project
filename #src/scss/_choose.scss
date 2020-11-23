@@ -2,14 +2,13 @@
     text-align: center;
 .container {
     padding: 40px 0;
+.section-txt {
+    color: #6f6f6f;
+    opacity: 0.6;
+    margin-bottom: 160px;
+}    
 }    
     
-h5 {
-    font-family:"Montserrat-bold", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
 svg::before{
     content: "";
     display: block;
@@ -18,13 +17,7 @@ svg::before{
     background-color:#6f6f6f;
     margin-right: 15px;
   }
-.section-txt {
-    font-family: "OpenSans-Light", sans-serif;
-    font-weight: 100;
-    font-size: 18px;
-    color: #6f6f6f;
-    margin-bottom: 140px;
-}
+
 strong {
     font-family: "Montserrat-bold", sans-serif;
     font-size: 24px;
@@ -155,6 +148,7 @@ strong {
     margin-bottom: 20px;
 }
 } 
+
 .phone {
     width: 200px;
     height: 215px;

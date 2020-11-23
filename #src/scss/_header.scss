@@ -1,11 +1,21 @@
 body {
     background-color: #fff;
+.team {
+    font-family: "Montserrat-bold", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}    
+.section-txt {
+    font-family: "OpenSans-Light", sans-serif;
+    font-size: 18px;
+}    
 .hummer {
-        height: 20px;
-        width: 220px;
+    height: 20px;
+    width: 220px;
 
 .line {
-        opacity: 0.3;
+    opacity: 0.3;
         }
 }
 }

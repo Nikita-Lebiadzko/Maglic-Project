@@ -423,6 +423,18 @@ body {
   background-color: #fff;
 }
 
+body .team {
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+body .section-txt {
+  font-family: "OpenSans-Light", sans-serif;
+  font-size: 18px;
+}
+
 body .hummer {
   height: 20px;
   width: 220px;
@@ -666,6 +678,10 @@ body .hummer .line {
   height: 32px;
 }
 
+.wr-services .section-txt {
+  opacity: 0.6;
+}
+
 .wr-services .hummer {
   fill: #fff;
 }
@@ -716,18 +732,6 @@ body .hummer .line {
   background: rgba(255, 255, 255, 0.2);
   color: #fffefe;
   padding: 25px 10px;
-}
-
-.portfolio h6 {
-  font-family: "Montserrat-bold", sans-serif;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.portfolio p {
-  font-family: "OpenSans-Light", sans-serif;
-  font-size: 18px;
-  opacity: 0.7;
 }
 
 .portfolio .hummer {
@@ -883,11 +887,10 @@ body .hummer .line {
   padding: 40px 0;
 }
 
-.choose-section h5 {
-  font-family: "Montserrat-bold", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  margin-bottom: 40px;
+.choose-section .container .section-txt {
+  color: #6f6f6f;
+  opacity: 0.6;
+  margin-bottom: 160px;
 }
 
 .choose-section svg::before {
@@ -897,14 +900,6 @@ body .hummer .line {
   width: 80px;
   background-color: #6f6f6f;
   margin-right: 15px;
-}
-
-.choose-section .section-txt {
-  font-family: "OpenSans-Light", sans-serif;
-  font-weight: 100;
-  font-size: 18px;
-  color: #6f6f6f;
-  margin-bottom: 140px;
 }
 
 .choose-section strong {
@@ -1118,12 +1113,6 @@ body .hummer .line {
   margin-bottom: 30px;
 }
 
-.parallax-section .text {
-  font-family: "Montserrat-bold", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-
 .parallax-section .text::after {
   content: "";
   display: block;
@@ -1155,18 +1144,14 @@ body .hummer .line {
 
 .our-team {
   text-align: center;
+  padding: 55px 0;
 }
 
 .our-team .team {
-  font-family: "Montserrat-bold, sans-serif";
-  font-weight: 800;
-  font-size: 18px;
+  letter-spacing: 5px;
 }
 
 .our-team .section-txt {
-  font-family: "OpenSans-Light, sans-serif";
-  font-weight: 100;
-  font-size: 18px;
   color: #6f6f6f;
   margin-bottom: 60px;
 }
@@ -1326,17 +1311,11 @@ body .hummer .line {
 }
 
 .testimonial .team {
-  font-family: "Montserrat-bold",sans-serif;
-  font-weight: 800;
-  font-size: 18px;
   margin-bottom: 25px;
   letter-spacing: 8px;
 }
 
 .testimonial .section-txt {
-  font-family: "OpenSans-LightItalic",sans-serif;
-  font-size: 18px;
-  margin-bottom: 80px;
   opacity: 0.8;
 }
 
@@ -1503,15 +1482,10 @@ body .hummer .line {
 }
 
 .our-blog .team {
-  font-family: "Montserrat-bold",sans-serif;
-  font-weight: 800;
-  font-size: 18px;
+  letter-spacing: 6px;
 }
 
 .our-blog .section-txt {
-  font-family: "OpenSans-Light", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
   color: #6f6f6f;
   margin-bottom: 60px;
 }
@@ -1529,65 +1503,78 @@ body .hummer .line {
   background-color: #eaeaea;
 }
 
-.grid-blog div {
-  width: 25%;
-  height: 330px;
+.grid-blog .table-blog, .grid-blog .table-blog-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
 }
 
-.grid-blog div a {
+.grid-blog .table-blog div, .grid-blog .table-blog-2 div {
+  width: 50%;
+}
+
+.grid-blog .table-blog-2 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.grid-blog a {
   text-decoration: none;
   color: #000;
 }
 
-.grid-blog div p {
+.grid-blog p {
   text-align: left;
   padding-left: 40px;
 }
 
-.grid-blog div .text-1 {
+.grid-blog .text-1 {
   font-family: "CrimsonText", serif;
   font-weight: 600;
   font-size: 14px;
   padding-top: 20px;
 }
 
-.grid-blog div .text-2 {
+.grid-blog .text-2 {
   font-family: "Montserrat-regular",sans-serif;
   font-weight: 800;
   font-size: 18px;
 }
 
-.grid-blog div .text-3 {
+.grid-blog .text-3 {
   font-family: "Montserrat-regular",sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #6f6f6f;
   padding-right: 40px;
-  margin-bottom: 30%;
+  margin-bottom: 7vh;
 }
 
-.grid-blog div .text-4 {
+.grid-blog .text-4 {
   font-family: "Montserrat-regular",sans-serif;
   font-weight: 600;
   font-size: 12px;
 }
 
-.grid-blog div .arrow {
+.grid-blog .arrow {
   width: 20px;
   height: 10px;
   padding: 0 20px;
 }
 
-.grid-blog div .text-2, .grid-blog div .text-4 {
+.grid-blog .text-2, .grid-blog .text-4 {
   text-transform: uppercase;
 }
 
-.grid-blog div img {
-  overflow: hidden;
+.grid-blog img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
-  width: 100%;
-  height: 100%;
+  display: block;
 }
 
 @media (max-width: 1100px) {
@@ -1606,6 +1593,15 @@ body .hummer .line {
 
 .container {
   text-align: center;
+}
+
+.container .team {
+  letter-spacing: 3px;
+}
+
+.container .section-txt {
+  color: #6f6f6f;
+  margin-bottom: 60px;
 }
 
 .container .pricing-txt {

@@ -37,7 +37,9 @@ h3 {
     width: 36px;
     height: 32px;
 }
-
+.section-txt {
+    opacity: 0.6;
+}
 .hummer {
    fill: #fff;
 }
@@ -81,18 +83,6 @@ h3 {
     background: rgba(255, 255, 255, 0.2);
     color: #fffefe;
     padding: 25px 10px;
-
-h6 {
-    font-family:"Montserrat-bold", sans-serif;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-family:"OpenSans-Light", sans-serif;
-    font-size: 18px;
-    opacity: 0.7;
-}
 
 .hummer {
     fill: #fffefe;

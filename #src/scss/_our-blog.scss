@@ -4,14 +4,9 @@
     margin: 50px 0;
  
 .team {
-    font-family: "Montserrat-bold",sans-serif;
-    font-weight: 800;
-    font-size: 18px;
+    letter-spacing: 6px;
 }
 .section-txt {
-    font-family: "OpenSans-Light", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
     color: #6f6f6f;
     margin-bottom: 60px;
 }
@@ -19,14 +14,21 @@
 .hummer {
     fill: #6f6f6f;
 }  
-
 .grid-blog {
-display: flex;
-flex-wrap: wrap;
-background-color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eaeaea;
+.table-blog, .table-blog-2 {
+    display: flex;
+    width: 50%;
+  
 div {
-    width: 25%;
-    height: 330px;
+    width: 50%;
+}    
+}
+.table-blog-2 {
+    flex-direction: row-reverse;
+} 
 a {
     text-decoration: none;
     color: #000;
@@ -54,7 +56,7 @@ p {
     font-size: 14px;
     color: #6f6f6f;
     padding-right: 40px;
-    margin-bottom: 30%;
+    margin-bottom: 7vh;
 }
 .text-4 {
     font-family: "Montserrat-regular",sans-serif;
@@ -72,13 +74,14 @@ p {
 }
    
 img {
-    overflow: hidden;
-    object-fit: fill;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    object-fit: fill;
+    display: block;
+    
 }   
 }
-}
+
 
 
 @media (max-width: 1100px) {
