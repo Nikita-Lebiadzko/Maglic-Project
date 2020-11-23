@@ -1,6 +1,6 @@
 .parallax-section {
         background-image:
-        linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
+        linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
         url("../img/section-3.jpg");
         background-position: top;
         background-repeat: no-repeat;
@@ -8,20 +8,23 @@
         height: 320px;
         color: #fff;
 
-.container {
+.counter-box {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 40px;
+        padding: 80px 40px;
        }
 
-.figures {
+.counter {
         font-family: "Montserrat-regular", serif;
-        font-weight: 800;
+        font-weight: 600;
         font-size: 48px;
         margin-bottom: 30px;
 }
 .text {
+        font-family: "Montserrat-bold", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
        
 }
 .text::after {
@@ -35,7 +38,7 @@
 }
 @media (max-width: 720px) {
 .parallax-section {
-        min-width: 410px;
+       
 .container {
         flex-wrap: wrap;
         justify-content: center;

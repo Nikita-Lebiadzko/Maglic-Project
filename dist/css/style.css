@@ -588,9 +588,6 @@ body .hummer .line {
 }
 
 @media (max-width: 830px) {
-  .wr-home {
-    min-width: 410px;
-  }
   .wr-home .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -828,9 +825,6 @@ body .hummer .line {
 }
 
 @media (max-width: 870px) {
-  .wr-services {
-    min-width: 410px;
-  }
   .wr-services h3 {
     font-size: 20px;
   }
@@ -1014,9 +1008,6 @@ body .hummer .line {
 }
 
 @media (max-width: 1300px) {
-  .choose-section {
-    min-width: 410px;
-  }
   .choose-section h5, .choose-section .section-txt {
     font-size: 12px;
   }
@@ -1083,9 +1074,9 @@ body .hummer .line {
 }
 
 .parallax-section {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.3))), url("../img/section-3.jpg");
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-3.jpg");
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("../img/section-3.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/section-3.jpg");
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/section-3.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/section-3.jpg");
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
@@ -1093,7 +1084,7 @@ body .hummer .line {
   color: #fff;
 }
 
-.parallax-section .container {
+.parallax-section .counter-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,14 +1094,20 @@ body .hummer .line {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 40px;
+  padding: 80px 40px;
 }
 
-.parallax-section .figures {
+.parallax-section .counter {
   font-family: "Montserrat-regular", serif;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 48px;
   margin-bottom: 30px;
+}
+
+.parallax-section .text {
+  font-family: "Montserrat-bold", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .parallax-section .text::after {
@@ -1123,9 +1120,6 @@ body .hummer .line {
 }
 
 @media (max-width: 720px) {
-  .parallax-section {
-    min-width: 410px;
-  }
   .parallax-section .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1734,9 +1728,6 @@ body .hummer .line {
 }
 
 @media (max-width: 1120px) {
-  .plan-pricing {
-    min-width: 410px;
-  }
   .plan-pricing .section-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1932,9 +1923,6 @@ input::placeholder, textarea::placeholder {
 }
 
 @media (max-width: 855px) {
-  .contact {
-    min-width: 410px;
-  }
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2054,9 +2042,6 @@ input::placeholder, textarea::placeholder {
 }
 
 @media (max-width: 1160px) {
-  .last-footer {
-    min-width: 410px;
-  }
   .last-footer p {
     margin: 10px;
   }
