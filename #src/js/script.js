@@ -19,7 +19,6 @@ function startCounter() {
         });
     }
 };
-
 let mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     // loop: true,
