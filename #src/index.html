@@ -122,15 +122,16 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Show Amazing Your Works</p>
-            <div class="filter-tabs">
-                <button class="btn-text">BRANDING DESIGN</button>
-                <button class="btn-text">PHOTOGRAPHY</button>
-                <button class="btn-text">WEB DESIGN</button>
-                <button class="more-btn">+</button>
+            <div class="filter">
+                <button class="btn-text" id="v1">BRANDING DESIGN</button>
+                <button class="btn-text" id="v2">PHOTOGRAPHY</button>
+                <button class="btn-text" id="v3">WEB DESIGN</button>
+                <button class="active btn-text" id="all">ALL</button>
             </div>
         </div>
         <div class="portfolio-section">
-            <a href="#"><img src="./img/portfolio-1.jpg" alt="">
+            <a class="block v1" data-var="v1" href="#"><img src="./img/portfolio-1.jpg" alt="
+                sea">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -144,7 +145,8 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-2.jpg" alt="">
+            <a class="block v2" data-var="v2" href="#"><img src="./img/portfolio-2.jpg" alt="
+                desert">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -158,7 +160,8 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-3.jpg" alt="">
+            <a class="block v3" data-var="v3"   href="#"><img src="./img/portfolio-3.jpg" alt="
+                building">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -172,7 +175,7 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-4.jpg" alt="">
+            <a class="block v2" data-var="v2"  href="#"><img src="./img/portfolio-4.jpg" alt="sand house">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -186,7 +189,8 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-5.jpg" alt="">
+            <a class="block v3" data-var="v3"  href="#"><img src="./img/portfolio-5.jpg" alt="
+                anthill">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -200,7 +204,8 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-6.jpg" alt="">
+            <a class="block v3" data-var="v3"  href="#"><img src="./img/portfolio-6.jpg" alt="
+                goat on the mountain">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -214,7 +219,8 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-7.jpg" alt="">
+            <a class="block v1" data-var="v1"  href="#"><img src="./img/portfolio-7.jpg" alt="
+                winter forest">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -228,7 +234,8 @@
                     <p>Crossfit : 15.4 Open Workout</p>
                 </div>
             </a>
-            <a href="#"><img src="./img/portfolio-8.jpg" alt="">
+            <a class="block v2" data-var="v2"  href="#"><img src="./img/portfolio-8.jpg" alt="
+                field in the forest">
                 <div class="exp">
                     <svg class="search" viewBox="0 0 512 512">
                         <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3
@@ -362,7 +369,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <section id="Team" class="our-team">
         <div class="container">
@@ -376,17 +382,17 @@
             </svg>
             <p class="section-txt">We Make Beautiful Template</p>
             <div class="avatar-section">
-                <div class="avatar"><img src="./img/our-1.jpg" alt="">
+                <div class="avatar"><img src="./img/our-1.jpg" alt="JOHN SNOW">
                     <span></span>
                     <p class="avatar-text-1">JOHN SNOW</p>
                     <p class="avatar-text-2">CEO/CO-FOUNDER</p>
                 </div>
-                <div class="avatar"><img src="./img/our-2.jpg" alt="">
+                <div class="avatar"><img src="./img/our-2.jpg" alt="TYRION LANNISTER">
                     <span></span>
                     <p class="avatar-text-1">TYRION LANNISTER</p>
                     <p class="avatar-text-2">ART DIRECTOR/CO-FOUNDER</p>
                 </div>
-                <div class="avatar"><img src="./img/our-3.jpg" alt="">
+                <div class="avatar"><img src="./img/our-3.jpg" alt="SANSA STARK">
                     <span></span>
                     <p class="avatar-text-1">SANSA STARK</p>
                     <p class="avatar-text-2">PRODUCT MANAGER /CO-FOUNDER</p>
@@ -411,7 +417,7 @@
         <p class="section-txt">Our Happy Clients</p>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/maaan.png" alt="">
+                <div class="swiper-slide"><img src="./img/maaan.png" alt="man">
                     <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -426,7 +432,7 @@
                     <p class="text-midle">WHITE SHADOW WALKER</p>
                     <p class="text-down">CEO/FOUNDER DELL</p>
                 </div>
-                <div class="swiper-slide"><img src="./img/maaan.png" alt="">
+                <div class="swiper-slide"><img src="./img/maaan.png" alt="man">
                     <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -441,7 +447,7 @@
                     <p class="text-midle">WHITE SHADOW WALKER</p>
                     <p class="text-down">CEO/FOUNDER DELL</p>
                 </div>
-                <div class="swiper-slide"><img src="./img/maaan.png" alt="">
+                <div class="swiper-slide"><img src="./img/maaan.png" alt="man">
                     <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -482,7 +488,8 @@
         </div>
         <div class="grid-blog">
             <div class="table-blog">
-                <div><img src="./img/grid-1.jpg" alt=""></div>
+                <div><img src="./img/grid-1.jpg" alt="
+                    sand house"></div>
                 <div>
                     <p class="text-1">Brading design</p>
                     <p class="text-2">Leeds Juicery</p>
@@ -502,7 +509,8 @@
                 </div>
             </div>
             <div class="table-blog">
-                <div><img src="./img/grid-2.jpg" alt=""></div>
+                <div><img src="./img/grid-2.jpg" alt="
+                    fingers"></div>
                 <div>
                     <p class="text-1">Motion Graphic</p>
                     <p class="text-2">Hello Itaewon Project</p>
@@ -522,7 +530,8 @@
                 </div>
             </div>
             <div class="table-blog-2">
-                <div><img src="./img/grid-3.jpg" alt=""></div>
+                <div><img src="./img/grid-3.jpg" alt="
+                    hotel on the beach"></div>
                 <div>
                     <p class="text-1">Lookbook seasonal</p>
                     <p class="text-2">Brooklyn</p>
@@ -542,7 +551,8 @@
                 </div>
             </div>
             <div class="table-blog-2">
-                <div><img src="./img/grid-4.jpg" alt=""></div>
+                <div><img src="./img/grid-4.jpg" alt="
+                    penguins"></div>
                 <div>
                     <p class="text-1">Photography</p>
                     <p class="text-2">Maxi Dress</p>
@@ -771,7 +781,7 @@
     </section>
     <section id="contact" class="contact">
         <div class="container">
-            <a href="#" class="container-contact">
+            <a href="tel: +61 4 5873 2984" class="container-contact">
                 <div class="contact-icon">
                     <svg viewBox="0 0 320 512">
                         <path d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48
@@ -786,7 +796,9 @@
                     <p>+61 4 5873 2984 </p>
                 </div>
             </a>
-            <a href="#" class="container-contact">
+            <a target="blank"
+                href="https://www.google.com/maps/place/Little+Lonsdale+St,+Melbourne+VIC+3000,+%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F/@-37.8113144,144.9595574,17z/data=!3m1!4b1!4m5!3m4!1s0x6ad642cab0b6f5e7:0xa738f6dd68b5a1e8!8m2!3d-37.8113144!4d144.9617461"
+                class="container-contact">
                 <div class="contact-icon">
                     <svg viewBox="0 0 384 512">
                         <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0
@@ -802,7 +814,7 @@
                     <p>Victoria 8011 Australia</p>
                 </div>
             </a>
-            <a href="#" class="container-contact">
+            <a href="mailto:support@yourcompany.com" class="container-contact">
                 <div class="contact-icon">
                     <svg viewBox="0 0 512 512">
                         <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5
@@ -872,7 +884,7 @@
             <div class="footer-block-4">
                 <p class="text-block">Instagram</p>
                 <div class="img-footer">
-                    <a href="#"><img src="./img/footer.png" alt=""></a>
+                    <a href="#"><img src="./img/footer.png" alt="send house"></a>
                 </div>
             </div>
         </footer>
@@ -920,12 +932,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/script.min.js"></script>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous"></script>  -->
-
-
 </body>
 
 </html>

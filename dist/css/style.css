@@ -735,11 +735,11 @@ body .hummer .line {
   fill: #fffefe;
 }
 
-.portfolio .filter-tabs {
+.portfolio .filter {
   padding: 30px 0 5px;
 }
 
-.portfolio .filter-tabs button {
+.portfolio .filter button {
   font-family: "Montserrat-regular", sans-serif;
   font-size: 11px;
   border: solid 2px white;
@@ -749,17 +749,18 @@ body .hummer .line {
   margin: 0px 15px;
 }
 
-.portfolio .filter-tabs button:hover {
+.portfolio .filter button:hover {
   border-color: #eeb013;
   cursor: pointer;
 }
 
 .portfolio .btn-text {
+  text-transform: uppercase;
   width: 160px;
 }
 
-.portfolio .more-btn {
-  width: 60px;
+.portfolio .filter button:focus {
+  background-color: #eeb013;
 }
 
 .portfolio-section {
@@ -824,6 +825,15 @@ body .hummer .line {
   height: 100%;
 }
 
+.hide {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  -webkit-transition: 1000ms;
+  -o-transition: 1000ms;
+  transition: 1000ms;
+  pointer-events: none;
+}
+
 @media (max-width: 870px) {
   .wr-services h3 {
     font-size: 20px;
@@ -852,7 +862,7 @@ body .hummer .line {
   .wr-services .portfolio {
     padding: 10px 10px;
   }
-  .wr-services .portfolio .filter-tabs {
+  .wr-services .portfolio .filter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1219,6 +1229,9 @@ body .hummer .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 80px;
 }
 
@@ -1434,9 +1447,6 @@ body .hummer .line {
 }
 
 @media (max-width: 1000px) {
-  .testimonial {
-    min-width: 410px;
-  }
   .testimonial .swiper-container {
     width: 50%;
     height: 65%;
@@ -1754,6 +1764,10 @@ body .hummer .line {
   padding: 50px 0;
 }
 
+.contact .container a {
+  text-decoration: none;
+}
+
 .container-contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1920,6 +1934,23 @@ input::placeholder, textarea::placeholder {
 
 .form-button button:hover {
   background-color: #eeb013;
+}
+
+.container-contact:hover svg {
+  fill: #5b5b5b;
+  z-index: 20;
+}
+
+.container-contact:hover p {
+  color: #eeb013;
+}
+
+.container-contact:hover .contact-icon:after {
+  background-color: #eeb013;
+  z-index: 15;
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
 }
 
 @media (max-width: 855px) {

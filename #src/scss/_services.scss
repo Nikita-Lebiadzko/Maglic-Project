@@ -88,11 +88,11 @@ h3 {
     fill: #fffefe;
 }
 
-.filter-tabs {
+.filter {
 padding: 30px 0 5px;
 }
 
-.filter-tabs button {
+.filter button {
     font-family:"Montserrat-regular", sans-serif;
     font-size: 11px;
     border: solid 2px white;
@@ -101,16 +101,21 @@ padding: 30px 0 5px;
     background-color: transparent;
     margin: 0px 15px;
 }
-.filter-tabs button:hover {
+.filter button:hover {
    border-color: #eeb013;
    cursor: pointer;
 }
 .btn-text {
+    text-transform: uppercase;
     width: 160px;
 } 
- .more-btn {
-     width: 60px;
+.filter button:focus {
+    background-color: #eeb013;
 }
+
+//  .active {
+//      width: 60px;
+// }
 }
 
 .portfolio-section {
@@ -164,6 +169,12 @@ img {
     height: 100%;
 }
 }
+.hide  {
+    filter: brightness(50%);
+    transition: 1000ms;
+    pointer-events: none; 
+}
+
  
 @media (max-width: 870px) {
 .wr-services {
@@ -191,7 +202,7 @@ p {
 }
 .portfolio{
     padding: 10px 10px;
-.filter-tabs {
+.filter {
     display: flex;
     flex-direction: column;
     align-items: center;

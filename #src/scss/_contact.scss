@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
+a {
+    text-decoration: none;
+}    
 }
 }
 .container-contact {
@@ -107,6 +110,20 @@ button {
 button:hover {
     background-color: #eeb013;
     }    
+}
+.container-contact:hover {
+svg {
+    fill: #5b5b5b;
+    z-index: 20;
+}    
+p {
+    color: #eeb013;
+}
+    .contact-icon:after  {
+    background-color: #eeb013; 
+    z-index: 15;
+    transition: 0.9s;
+}  
 }
 
 
