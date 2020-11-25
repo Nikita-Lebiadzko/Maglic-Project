@@ -36,19 +36,17 @@
         margin: 30px 45px;
 }
 }
-@media (max-width: 720px) {
+@media (max-width: 768px) {
 .parallax-section {
-       
-.container {
+.counter-box {
+        padding: 50px 10px;
         flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px 20px;
-}       
-.figures {
-        font-size: 22px;
-}
-.text {
-        font-size: 15px;
-}        
+}   
+.counter-item {
+        width: 50%;
+}  
+.text::after {
+        width: auto;
+} 
 }
 }

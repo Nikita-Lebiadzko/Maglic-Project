@@ -1,8 +1,14 @@
 
+//   $(document).ready(function() {
+//     $('.header-burger').click(function(event) {
+//         $('.header-burger,.list').toggleClass('active')  
+//     });
+// });
+
 $(window).scroll(startCounter);
 
 function startCounter() {
-    if ($(window).scrollTop() > 2890 ) {
+    if ($(window).scrollTop() > 2390 ) {
         $(window).off('scroll', startCounter);
         $('.counter').each(function() {
             let $this = $(this);
@@ -19,6 +25,23 @@ function startCounter() {
         });
     }
 };
+
+let header__burger = document.querySelector('.header-burger');
+let header_menu = document.querySelector('.list');
+let back = document.querySelector('body');
+let header__list = document.querySelector('.list');
+
+header__burger.onclick = function(){
+    header__burger.classList.toggle('active');
+    header_menu.classList.toggle('active');
+    back.classList.toggle('lock');
+}
+
+header__list.onclick = function () {
+    header__list.classList.remove('active');
+    back.classList.toggle('lock');
+}
+
 let mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     // loop: true,
@@ -72,3 +95,5 @@ let mySwiper = new Swiper('.swiper-container', {
       .map(block => block.classList.add('hide'));
   });
   
+
+

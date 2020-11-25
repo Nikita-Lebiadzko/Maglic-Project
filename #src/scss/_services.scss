@@ -33,7 +33,7 @@ h3 {
     align-items: center;
     
 }
-.icons {
+.icons-1,.icons-2 {
     width: 36px;
     height: 32px;
 }
@@ -170,38 +170,58 @@ img {
 }
 }
 .hide  {
-    filter: brightness(50%);
+    filter: brightness(40%);
     transition: 1000ms;
     pointer-events: none; 
 }
 
  
-@media (max-width: 870px) {
+@media (max-width: 768px) {
 .wr-services {
-   
+.text-section {
+    text-align: center;
+}    
 h3 {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 h6 {
     font-size: 15px;
+}
+.container-icons {
+    width: 50px;
+    height: 48px;
+
+.icons-2  {
+    width: 29px;
+    height: 32px;
+}    
+}
+.container-custom {
+    padding: 10px 5px;
 }
 .text-section p {
     font-size: 14px;
 }    
 .service-icon {
     flex-direction: column;
+    padding: 15px 0 0;
     margin-bottom: 15px;
 p {
     margin-left: 0;
 }
 }
+
 .service-btn {
     font-size: 12px;
-    width: 150px;
-    height: 35px;
+    width: 130px;
+    height: 25px;
 }
-.portfolio{
-    padding: 10px 10px;
+.exp {
+    display: none;
+}
+.portfolio {
+    padding: 5px 5px;
 .filter {
     display: flex;
     flex-direction: column;
@@ -212,8 +232,10 @@ p {
     font-size: 11px;
 }
 button {
-    margin-bottom: 2px;
+    height: 20px;
+    margin: 5px 15px;
 }
 } 
 }
+
 }
