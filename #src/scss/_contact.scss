@@ -128,14 +128,27 @@ p {
 
 
 @media (max-width: 855px) {
-.contact {
-    
+.form-contact {
+    flex-direction: column;
+input {
+    width: 100%;
 }    
+}
 .container {
     flex-direction: column;
 .container-contact {
     flex-direction: column;
     margin-bottom: 35px;
 }    
+.form-textaria textarea {
+    height: 115px;
+}
+.form-email, .form-name, .form-subject {
+    width: 100%;
+}
+.form-button button {
+    width: 140px;
+    height: 35px;
+}
 }
 }

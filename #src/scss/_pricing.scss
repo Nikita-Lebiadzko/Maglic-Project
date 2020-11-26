@@ -117,7 +117,11 @@ span {
     cursor: pointer;
 }  
 
-
+@media (max-width: 910px) {
+    .section-plan li svg {
+        margin-left: 20px;
+    }
+}
 
 
 @media (max-width: 768px) {
@@ -125,7 +129,7 @@ span {
     flex-wrap: wrap; 
     justify-content: center;
 .section-plan {
-    width: 40%;
+    width: 37%;
     height: 270px;
     padding: 5px 0;
     margin: 15px 5px;
@@ -133,8 +137,9 @@ span {
     width: 100%;
 }     
 .text-bottom {
+    margin: 0;
 .icons-section {
-    left: 0;
+    left: 25px;
     bottom: 40px;
     opacity: 0.3;
 }  
@@ -155,9 +160,15 @@ svg {
 @media (max-width: 1180px) {
 .section-plan .text-bottom .icons-section {
     left: 0;
+}  
+.section-plan:hover .get {
+    bottom:0;
+    z-index: 10;
+    transition: 0.3s;
+    cursor: pointer;
 }   
 }
-@media (max-width: 430px) {
+@media (max-width: 530px) {
 .section-block {
 .section-plan {
     height: 270px;
@@ -165,10 +176,12 @@ svg {
     font-size: 11px;
 }    
 .text-bottom .icons-section {
-    bottom: 80px;
+    bottom: 60px;
+    left: 0;
 }    
 li {
-    margin: 5px 0;
+    margin: 11px 0;
+    font-size: 11px;
 svg {
     margin-left: 1px;
 }       

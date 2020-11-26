@@ -53,17 +53,14 @@ let mySwiper = new Swiper('.swiper-container', {
       clickable: true,
     },
   })
-  var avatarSwiper = new Swiper('.swiper-avatar', {
-    // Optional parameters
-    direction: 'vertical',
+  let swiper = new Swiper('.swiper-header', {
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-  
   });
+
 
   let btnsFilterContainer = document.querySelector('.filter'); 
   let removeClass = function(arr, className){
