@@ -1444,7 +1444,7 @@ body .theme-color {
             justify-content: center;
   }
   .our-team .avatar-section .avatar {
-    width: 30%;
+    width: 40%;
     height: 100%;
   }
   .our-team .team-text, .our-team .light-text {
@@ -1646,7 +1646,7 @@ body .theme-color {
     height: 97px;
   }
   .testimonial .swiper-container .text-swiper {
-    font-size: 12px;
+    font-size: 9px;
   }
   .testimonial .swiper-container .desc-swiper {
     font-size: 10px;
