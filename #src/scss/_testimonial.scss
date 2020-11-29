@@ -9,15 +9,19 @@
     color: #fff;
     position: relative;
     padding: 35px 0;
+    
+.repeat-block {
+    margin-bottom: 20px;
+}    
 
-.team {
+h2 {
     margin-bottom: 25px;
     letter-spacing: 8px;
 }
 .section-txt {
     opacity: 0.8;
 }
-.hummer {
+.icon-hummer {
     fill: #fff;
 }
 .bottom-text {
@@ -87,25 +91,25 @@ img {
     fill: #fff;
     margin-bottom: 10px;
 }
-.text-up {
+.text-swiper {
     font-family: "MyriadPro", sans-serif;
     font-weight: 200;
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 40px;
 }
-.text-midle {
+.desc-swiper {
     font-family: "Montserrat-regular", sans-serif;
     font-weight: 200;
     font-size: 14px;
 }
-.text-down {
+.excerpt {
     font-family: "OpenSans-Light", sans-serif;
     font-weight: 200;
     font-size: 12px;
     opacity: 0.6;
 }
-.text-midle,.text-down {
+.desc-swiper,.excerpt {
     text-transform: uppercase;
 }
 }
@@ -142,13 +146,13 @@ img {
     width: 97px;
     height: 97px;
 }    
-.text-up {
+.text-swiper {
     font-size: 12px;
 }   
-.text-midle {
+.desc-swiper {
     font-size: 10px;
 } 
-.text-down {
+.excerpt {
     font-size: 8px;
 }
 .triangle {

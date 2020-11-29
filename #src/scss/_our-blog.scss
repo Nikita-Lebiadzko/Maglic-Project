@@ -2,16 +2,17 @@
 .our-blog {
     text-align: center;
     margin: 50px 0;
- 
-.team {
+.repeat-block {
+    margin-bottom: 60px;
+} 
+h2 {
     letter-spacing: 6px;
 }
 .section-txt {
     color: #6f6f6f;
-    margin-bottom: 60px;
 }
 }    
-.hummer {
+.icon-hummer {
     fill: #6f6f6f;
 }  
 .grid-blog {
@@ -21,11 +22,15 @@
 .table-blog, .table-blog-2 {
     display: flex;
     width: 50%;
-  
+
 div {
     width: 50%;
+    text-align: left;
 }    
 }
+.table-text p,h5,a {
+    padding-left: 10px;
+}  
 .table-blog-2 {
     flex-direction: row-reverse;
 } 
@@ -36,21 +41,19 @@ a {
 }
 p { 
     text-align: left;
-    padding-left: 40px;
 } 
 
-.text-1 {
+.grid-title {
     font-family: "CrimsonText", serif;
     font-weight: 600;
     font-size: 14px;
-    padding-top: 20px;
 }    
-.text-2 {
+h5 {
     font-family: "Montserrat-regular",sans-serif;
     font-weight: 800;
     font-size: 18px;
 }
-.text-3 {
+.grid-desc {
     font-family: "Montserrat-regular",sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -58,12 +61,12 @@ p {
     padding-right: 40px;
     margin-bottom: 30%;
 }
-.text-4 {
+a {
     font-family: "Montserrat-regular",sans-serif;
     font-weight: 600;
     font-size: 12px;
 }
-.text-4:hover {
+a:hover {
     color: #eeb013;
     fill: #eeb013;
     cursor: pointer;
@@ -71,10 +74,9 @@ p {
 .arrow {
     width: 20px;
     height: 10px;
-    padding: 0 20px;
 }
 
-.text-2, .text-4 {
+h5, a {
     text-transform: uppercase;
 }
    
@@ -92,14 +94,14 @@ p {
 p {
     padding-left: 5px;
 }  
-.text-1 {
+.grid-title {
     padding-top: 2px;
     font-size: 10px;
 }  
-.text-2 {
+h5 {
     font-size: 12px;
 }
- .text-3  {
+.grid-desc  {
     margin-bottom: 15%;
     font-size: 12px;
     padding-right: 2px;
@@ -115,7 +117,7 @@ p {
 }
 }
 @media (max-width: 480px) {
-    .grid-blog .text-3 {
+    .grid-blog .grid-desc {
     margin-bottom: 5%;
     }
 }

@@ -12,11 +12,10 @@
 </head>
 
 <body>
-    <section id="home" class="home">
-        <div class="wr-home">
+    <section id="home" class="wr-home">
             <header>
                 <div class="container">
-                    <a href="#"><img class="logo" src="./img/logo.webp" alt="logo"></a>
+                    <img class="logo" src="./img/logo.webp" alt="logo">
                     <nav class="nav">
                         <div class="header-burger">
                             <span></span>
@@ -25,10 +24,10 @@
                             <li><a href="#home">Home</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#Works">Works</a></li>
-                            <li><a href="#About">About us</a></li>
-                            <li><a href="#Team">Team</a></li>
-                            <li><a href="#Blog">Blog</a></li>
-                            <li><a href="#PRICING">PRICING</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#pricing">PRICING</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
@@ -38,12 +37,12 @@
                 <div class="swiper-header">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <h2>WE DELIVER EXCELLENCE</h2>
+                            <h1>WE DELIVER EXCELLENCE</h1>
                             <p>Suspendisse potenti. Integer odio erat, euismod vel dictum nec, mattis ac erat</p>
                             <button><span>SIGN NOW</span></button>
                         </div>
                         <div class="swiper-slide">
-                            <h2>WE DELIVER EXCELLENCE</h2>
+                            <h1>WE DELIVER EXCELLENCE</h1>
                             <p>Suspendisse potenti. Integer odio erat, euismod vel dictum nec, mattis ac erat</p>
                             <button><span>SIGN NOW</span></button>
                         </div>
@@ -52,11 +51,10 @@
                     <div class="swiper-button-prev"><img class="arrow" src="./img/prev_btn.png" alt="arrow right"></div>
                 </div>
             </div>
-        </div>
     </section>
     <section id="services" class="wr-services">
         <div class="container-custom">
-            <div class="text-section">
+            <div class="text-wr-services">
                 <h3>AWESOME MULTI-CONCEPT STUDIO</h3>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form, by injected humour, or randomised words which don't look even slightly
@@ -116,8 +114,9 @@
             <button class="service-btn">MORE SERVICES</button>
         </div>
         <div id="Works" class="portfolio">
-            <p class="team">OUR WORKS</p>
-            <svg class="hummer">
+            <div class="repeat-block">
+            <h2>OUR WORKS</h2>
+            <svg class="icon-hummer">
                 <path
                     d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
                 <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
@@ -125,11 +124,12 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Show Amazing Your Works</p>
+        </div>
             <div class="filter">
-                <button class="btn-text" id="v1">BRANDING DESIGN</button>
-                <button class="btn-text" id="v2">PHOTOGRAPHY</button>
-                <button class="btn-text" id="v3">WEB DESIGN</button>
-                <button class="active btn-text" id="all">ALL</button>
+                <button id="v1">BRANDING DESIGN</button>
+                <button id="v2">PHOTOGRAPHY</button>
+                <button id="v3">WEB DESIGN</button>
+                <button class="active-btn" id="all">ALL</button>
             </div>
         </div>
         <div class="portfolio-section">
@@ -254,10 +254,11 @@
             </a>
         </div>
     </section>
-    <section id="About" class="choose-section">
+    <section id="about" class="choose-section">
         <div class="container">
-            <p class="team">WHY CHOOSE US</p>
-            <svg class="hummer">
+            <div class="repeat-block">
+            <h2>WHY CHOOSE US</h2>
+            <svg class="icon-hummer">
                 <path
                     d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
                 <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
@@ -265,6 +266,7 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Our Mission We build Amazing Website</p>
+            </div>
             <div class="mobile">
                 <div class="text-mobile">
                     <p><strong> SERVICES & BEST SUPPORT</strong></p>
@@ -279,70 +281,67 @@
                 <img class="phone" src="./img/mobile_mockup.png" alt="telephone">
             </div>
             <div class="features-section">
-                <div class="features-section-container">
+                <div class="features-block-border">
                     <div class="features-section-icon">
                         <img src="./img/icon-1.png" alt="">
                     </div>
                     <div class="features-section-text">
-                        <p class="text-bold">TRENDING</p>
+                        <h6>TRENDING</h6>
                         <p class="text-regular">Contrary to popular belief, Lorem Ipsum is not simply random text. It
                             has
                             roots in a piece</p>
-                        <span></span>
                     </div>
                 </div>
-                <div class="features-section-container">
+                <div class="features-block-border">
                     <div class="features-section-icon">
                         <img src="./img/icon-2.png" alt="">
                     </div>
                     <div class="features-section-text">
-                        <p class="text-bold">SMART SETTING</p>
+                        <h6>SMART SETTING</h6>
                         <p class="text-regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
                         </p>
-                        <span></span>
                     </div>
                 </div>
-                <div class="features-section-container">
+                <div class="features-block-border">
                     <div class="features-section-icon">
                         <img src="./img/icon-3.png" alt="">
                     </div>
                     <div class="features-section-text">
-                        <p class="text-bold">POWERFUL ADMIN</p>
+                        <h6>POWERFUL ADMIN</h6>
                         <p class="text-regular">Contrary to popular belief, Lorem Ipsum is not simply random text. It
                             has
                             roots in a piece</p>
-                        <span></span>
                     </div>
                 </div>
-                <div class="features-section-container">
+                <div class="features-block">
                     <div class="features-section-icon">
                         <img src="./img/icon-4.png" alt="">
                     </div>
                     <div class="features-section-text">
-                        <p class="text-bold">SLEPPING MODE</p>
+                        <h6>SLEPPING MODE</h6>
                         <p class="text-regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
                         </p>
                     </div>
                 </div>
-                <div class="features-section-container">
+                <div class="features-block">
                     <div class="features-section-icon">
                         <img src="./img/icon-5.png" alt="">
                     </div>
                     <div class="features-section-text">
-                        <p class="text-bold">USER FRIENDLY</p>
+                        <h6>USER FRIENDLY</h6>
                         <p class="text-regular">Contrary to popular belief, Lorem Ipsum is not simply random text. It
                             has
                             roots in a piece</p>
                     </div>
                 </div>
-                <div class="features-section-container">
+                <div class="features-block">
                     <div class="features-section-icon">
                         <img src="./img/icon-6.png" alt="">
                     </div>
                     <div class="features-section-text">
-                        <p class="text-bold">AUTO BACKUP</p>
+                        <h6>AUTO BACKUP</h6>
                         <p class="text-regular">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
                         </p>
@@ -353,7 +352,6 @@
     </section>
     <section class="parallax-section">
         <div class="container">
-            <div class="counter-box">
                 <div class="counter-item">
                     <span class="counter" data-count="35"></span>
                     <p class="text">Team Members</p>
@@ -370,13 +368,13 @@
                     <span class="counter" data-count="178"></span>
                     <p class="text">PSD files included</p>
                 </div>
-            </div>
         </div>
     </section>
-    <section id="Team" class="our-team">
+    <section id="team" class="our-team">
         <div class="container">
-            <p class="team">MEET OUR TEAM</p>
-            <svg class="hummer">
+            <div class="repeat-block">
+            <h2>MEET OUR TEAM</h2>
+            <svg class="icon-hummer">
                 <path
                     d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
                 <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
@@ -384,25 +382,30 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">We Make Beautiful Template</p>
+            </div>
             <div class="avatar-section">
-                <div class="avatar"><img src="./img/our-1.jpg" alt="JOHN SNOW">
-                    <span></span>
-                    <p class="avatar-text-1">JOHN SNOW</p>
-                    <p class="avatar-text-2">CEO/CO-FOUNDER</p>
-                </div>
-                <div class="avatar"><img src="./img/our-2.jpg" alt="TYRION LANNISTER">
-                    <span></span>
-                    <p class="avatar-text-1">TYRION LANNISTER</p>
-                    <p class="avatar-text-2">ART DIRECTOR/CO-FOUNDER</p>
-                </div>
-                <div class="avatar"><img src="./img/our-3.jpg" alt="SANSA STARK">
-                    <span></span>
-                    <p class="avatar-text-1">SANSA STARK</p>
-                    <p class="avatar-text-2">PRODUCT MANAGER /CO-FOUNDER</p>
+                <div class="avatar">
+                    <img src="./img/our-1.jpg" alt="JOHN SNOW">
+                    <div class="description-block">
+                    <p class="name-text">JOHN SNOW</p>
+                    <p class="profession-text">CEO/CO-FOUNDER</p>
                 </div>
             </div>
-            <p class="demo-txt">ARE YOUR CRAZY MAN ?</p>
-            <div class="text-demo">
+                <div class="avatar"><img src="./img/our-2.jpg" alt="TYRION LANNISTER">
+                    <div class="description-block">
+                    <p class="name-text">TYRION LANNISTER</p>
+                    <p class="profession-text">ART DIRECTOR/CO-FOUNDER</p>
+                </div>
+            </div>
+                <div class="avatar"><img src="./img/our-3.jpg" alt="SANSA STARK">
+                    <div class="description-block">
+                    <p class="name-text">SANSA STARK</p>
+                    <p class="profession-text">PRODUCT MANAGER /CO-FOUNDER</p>
+                </div>
+            </div>
+            </div>
+            <p class="team-text">ARE YOUR CRAZY MAN ?</p>
+            <div class="light-text">
                 <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
                     Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" </p>
                 <button>JOIN WITH US</button>
@@ -410,18 +413,20 @@
         </div>
     </section>
     <section class="testimonial">
-        <p class="team">WHAT CLIENT SAY ?</p>
-        <svg class="hummer">
+        <div class="repeat-block">
+        <h2>WHAT CLIENT SAY ?</h2>
+        <svg class="icon-hummer">
             <path
                 d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
             <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
             <path class="line" d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
         </svg>
         <p class="section-txt">Our Happy Clients</p>
+        </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./img/maaan.png" alt="man">
-                    <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
+                    <p class="text-swiper">”There are many variations of passages of Lorem Ipsum available, but the majority
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable.”</p>
@@ -432,11 +437,11 @@
                             <path d="M188.000,6.999 L305.000,6.999 L305.000,7.999 L188.000,7.999 L188.000,6.999 Z" />
                         </svg>
                     </p>
-                    <p class="text-midle">WHITE SHADOW WALKER</p>
-                    <p class="text-down">CEO/FOUNDER DELL</p>
+                    <p class="desc-swiper">WHITE SHADOW WALKER</p>
+                    <p class="excerpt">CEO/FOUNDER DELL</p>
                 </div>
                 <div class="swiper-slide"><img src="./img/maaan.png" alt="man">
-                    <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
+                    <p class="text-swiper">”There are many variations of passages of Lorem Ipsum available, but the majority
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable.”</p>
@@ -447,11 +452,11 @@
                             <path d="M188.000,6.999 L305.000,6.999 L305.000,7.999 L188.000,7.999 L188.000,6.999 Z" />
                         </svg>
                     </p>
-                    <p class="text-midle">WHITE SHADOW WALKER</p>
-                    <p class="text-down">CEO/FOUNDER DELL</p>
+                    <p class="desc-swiper">WHITE SHADOW WALKER</p>
+                    <p class="excerpt">CEO/FOUNDER DELL</p>
                 </div>
                 <div class="swiper-slide"><img src="./img/maaan.png" alt="man">
-                    <p class="text-up">”There are many variations of passages of Lorem Ipsum available, but the majority
+                    <p class="text-swiper">”There are many variations of passages of Lorem Ipsum available, but the majority
                         have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable.”</p>
@@ -462,8 +467,8 @@
                             <path d="M188.000,6.999 L305.000,6.999 L305.000,7.999 L188.000,7.999 L188.000,6.999 Z" />
                         </svg>
                     </p>
-                    <p class="text-midle">WHITE SHADOW WALKER</p>
-                    <p class="text-down">CEO/FOUNDER DELL</p>
+                    <p class="desc-swiper">WHITE SHADOW WALKER</p>
+                    <p class="excerpt">CEO/FOUNDER DELL</p>
                 </div>
 
             </div>
@@ -477,10 +482,11 @@
             </div>
         </div>
     </section>
-    <section id="Blog" class="our-blog">
+    <section id="blog" class="our-blog">
         <div class="container">
-            <p class="team">LATEST BLOG</p>
-            <svg class="hummer">
+            <div class="repeat-block">
+            <h2>LATEST BLOG</h2>
+            <svg class="icon-hummer">
                 <path
                     d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
                 <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
@@ -488,89 +494,86 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Tell Your Story</p>
+            </div>
         </div>
         <div class="grid-blog">
             <div class="table-blog">
                 <div><img class="grid-img" src="./img/grid-1.jpg" alt="
                     sand house"></div>
-                <div>
-                    <p class="text-1">Brading design</p>
-                    <p class="text-2">Leeds Juicery</p>
-                    <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                <div class="table-text">
+                    <p class="grid-title">Brading design</p>
+                    <h5>Leeds Juicery</h5>
+                    <p class="grid-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque
                         laudantium,
                         totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                    <a href="">
-                        <p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                    <a href="#">READ MORE<svg class="arrow" viewBox="0 0 448 512">
                                 <path d="M313.941 216H12c-6.627 0-12 5.373-12
                         12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
                         21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
                         9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
                         16.971V216z"></path>
-                            </svg></p>
+                            </svg>
                     </a>
                 </div>
             </div>
             <div class="table-blog">
                 <div><img class="grid-img" src="./img/grid-2.jpg" alt="
                     fingers"></div>
-                <div>
-                    <p class="text-1">Motion Graphic</p>
-                    <p class="text-2">Hello Itaewon Project</p>
-                    <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                <div class="table-text">
+                    <p class="grid-title">Motion Graphic</p>
+                    <h5>Hello Itaewon Project</h5>
+                    <p class="grid-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque
                         laudantium,
                         totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                    <a href="">
-                        <p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                    <a href="#">READ MORE<svg class="arrow" viewBox="0 0 448 512">
                                 <path d="M313.941 216H12c-6.627 0-12 5.373-12
                             12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
                             21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
                             9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
                             16.971V216z"></path>
-                            </svg></p>
+                            </svg>
                     </a>
                 </div>
             </div>
             <div class="table-blog-2">
                 <div><img class="grid-img" src="./img/grid-3.jpg" alt="
                     hotel on the beach"></div>
-                <div>
-                    <p class="text-1">Lookbook seasonal</p>
-                    <p class="text-2">Brooklyn</p>
-                    <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                <div class="table-text">
+                    <p class="grid-title">Lookbook seasonal</p>
+                    <h5>Brooklyn</h5>
+                    <p class="grid-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque
                         laudantium,
                         totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-
-                    <p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                        <a href="#">READ MORE<svg class="arrow" viewBox="0 0 448 512">
                             <path d="M313.941 216H12c-6.627 0-12 5.373-12
                     12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
                     21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
                     9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
                     16.971V216z"></path>
-                        </svg> </p>
+                        </svg>
                     </a>
                 </div>
             </div>
             <div class="table-blog-2">
                 <div><img class="grid-img" src="./img/grid-4.jpg" alt="
                     penguins"></div>
-                <div>
-                    <p class="text-1">Photography</p>
-                    <p class="text-2">Maxi Dress</p>
-                    <p class="text-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                <div class="table-text">
+                    <p class="grid-title">Photography</p>
+                    <h5>Maxi Dress</h5>
+                    <p class="grid-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                         doloremque
                         laudantium,
                         totam rem aperiam, eaque ipsa quae ab illo inventore </p>
-                    <a href="">
-                        <p class="text-4">READ MORE<svg class="arrow" viewBox="0 0 448 512">
+                    <a href="#">READ MORE<svg class="arrow" viewBox="0 0 448 512">
                                 <path d="M313.941 216H12c-6.627 0-12 5.373-12
                     12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 
                     21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373
                     9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971
                     16.971V216z"></path>
-                            </svg> </p>
+                            </svg>
                     </a>
                 </div>
             </div>
@@ -578,10 +581,11 @@
         </div>
         </div>
     </section>
-    <section id="PRICING" class="plan-pricing">
+    <section id="pricing" class="plan-pricing">
         <div class="container">
-            <p class="team">PRICING & PLANS</p>
-            <svg class="hummer">
+            <div class="repeat-block">
+            <h2>PRICING & PLANS</h2>
+            <svg class="icon-hummer">
                 <path
                     d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
                 <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
@@ -589,11 +593,13 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt">Get Your Plans for Work</p>
+        </div>
             <p class="pricing-txt">REGISTER NOW <span class="txt-plan">Or</span> TRY IF FREE FOR 30 DAYS</p>
+            
             <div class="section-block">
                 <div class="section-plan">
                     
-                    <p class="section-border">Basic Plan</p>
+                    <h4>Basic Plan</h4>
                     <ul>
                         <li>15 Email Account</li>
                         <li>100Gb Space
@@ -638,7 +644,7 @@
                     <button class="get">get plane</button>
                 </div>
                 <div class="section-plan">
-                    <p class="section-border">Business Plan</p>
+                    <h4>Business Plan</h4>
                     <ul>
                         <li>15 Email Account</li>
                         <li>100Gb Space
@@ -683,7 +689,7 @@
                     <button class="get">get plane</button>
                 </div>
                 <div class="section-plan">
-                    <p class="section-border">Premium Plan</p>
+                    <h4>Premium Plan</h4>
                     <ul>
                         <li>15 Email Account</li>
                         <li>100Gb Space
@@ -728,7 +734,7 @@
                     <button class="get">get plane</button>
                 </div>
                 <div class="section-plan">
-                    <p class="section-border">Ultimate Plan</p>
+                    <h4>Ultimate Plan</h4>
                     <ul>
                         <li>15 Email Account</li>
                         <li>100Gb Space
@@ -773,8 +779,9 @@
                     <button class="get">get plane</button>
                 </div>
             </div>
-            <p class="team">GET IN TOUCH</p>
-            <svg class="hummer">
+            <div class="repeat-block">
+            <h2>GET IN TOUCH</h2>
+            <svg class="icon-hummer">
                 <path
                     d="M102.297,0.688 L99.375,3.653 L96.940,6.125 L96.209,6.866 L94.992,12.056 L96.209,13.291 L105.463,3.901 L102.297,0.688 M115.588,2.956 C115.411,2.956 115.235,3.023 115.100,3.159 L117.535,5.631 C117.804,5.359 117.804,4.913 117.536,4.642 L116.075,3.159 C115.941,3.023 115.764,2.956 115.588,2.956 M98.401,2.956 C98.225,2.956 98.048,3.023 97.914,3.159 L96.453,4.642 C96.185,4.913 96.185,5.359 96.453,5.631 L98.888,3.159 C98.755,3.023 98.577,2.956 98.401,2.956 M110.961,7.361 L106.994,11.386 L103.028,7.361 L100.593,9.832 L104.559,13.858 L100.489,17.988 C100.221,18.260 100.221,18.705 100.489,18.977 L101.951,20.459 C102.085,20.596 102.261,20.663 102.438,20.663 C102.614,20.663 102.790,20.596 102.924,20.459 L106.994,16.329 L111.064,20.459 C111.198,20.596 111.375,20.663 111.551,20.663 C111.727,20.663 111.904,20.596 112.038,20.459 L113.499,18.977 C113.767,18.705 113.767,18.260 113.499,17.988 L109.429,13.858 L113.396,9.832 L110.961,7.361 M111.691,0.688 L108.525,3.901 L117.779,13.291 L118.997,12.056 L117.779,6.866 L117.049,6.125 L114.613,3.653 L111.691,0.688 " />
                 <path class="line" d="M0.000,12.999 L80.000,12.999 L80.000,13.999 L0.000,13.999 L0.000,12.999 Z" />
@@ -782,6 +789,7 @@
                     d="M144.000,12.999 L224.000,12.999 L224.000,13.999 L144.000,13.999 L144.000,12.999 Z" />
             </svg>
             <p class="section-txt ">Support Fast & Pro 24/7</p>
+            </div>
     </section>
     <section id="contact" class="contact">
         <div class="container">

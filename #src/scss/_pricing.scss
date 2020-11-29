@@ -1,11 +1,13 @@
-.container {
+.plan-pricing {
     text-align: center;
-.team {
+.repeat-block {
+    margin-bottom: 60px;
+}    
+h2 {
     letter-spacing: 3px;
 }    
 .section-txt {
     color: #6f6f6f;
-    margin-bottom: 60px;
 }
 .pricing-txt {
     font-family: "Montserrat-bold", sans-serif;
@@ -24,6 +26,7 @@
 }
 .section-block {
     display: flex;
+    padding: 25px 0;
 }
 .section-plan {
     position: relative;
@@ -32,22 +35,24 @@
     border: solid 2px #ececec ;
     text-align: center;
     padding: 20px 0;
-    margin: 25px 10px;
+    margin: 0 10px;
     background-color: #fff;
     cursor: pointer;
 
-.section-border {
+h4 {
     font-family: "Montserrat-bold", sans-serif;
     font-weight: 800;
     font-size: 14px;
     text-transform: uppercase;
-}
-.section-border::after {
-    content: "";
-    display: block;
     border-bottom: solid 2px #ececec;
-    margin-top: 20px;
+    padding: 0 0 20px;
 }
+// h4::after {
+//     content: "";
+//     display: block;
+//     border-bottom: solid 2px #ececec;
+//     margin-top: 20px;
+// }
 ul {
     padding: 0;
 }
@@ -102,9 +107,13 @@ span {
     text-transform: uppercase;
     position: relative;
     bottom: 40px;
-    z-index: -5;
+    display: none;
 } 
 }
+.section-plan {
+    transition: 0.5s;
+}
+
 .section-plan:hover {
     transform: translateY(-30px);
     transition: 0.5s;
@@ -112,8 +121,7 @@ span {
 }
 .section-plan:hover .get {
     bottom: 8px;
-    z-index: 10;
-    transition: 0.3s;
+    display: initial;
     cursor: pointer;
 }  
 
@@ -172,7 +180,7 @@ svg {
 .section-block {
 .section-plan {
     height: 270px;
-.section-border {
+h4 {
     font-size: 11px;
 }    
 .text-bottom .icons-section {

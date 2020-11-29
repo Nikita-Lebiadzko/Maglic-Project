@@ -1,16 +1,17 @@
 body {
     background-color: #fff;
-.team {
+h2 {
     font-family: "Montserrat-bold", sans-serif;
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
+    margin-bottom: 12px;
 }    
 .section-txt {
     font-family: "OpenSans-Light", sans-serif;
     font-size: 18px;
 }    
-.hummer {
+.icon-hummer {
     height: 20px;
     width: 220px;
 
@@ -30,7 +31,6 @@ body {
     background-size: cover;
     height: 100vh;
     background-position: center;
-    text-align: center;
     color: #fffefe;
     
 
@@ -42,23 +42,6 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 20vh;
-}
-
-.nav {
-    font-size: 18px;
-}
-
-ul {
-    font-family: "Lato-Black", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    display: flex;
-    text-transform: uppercase;
-}
-
-li {
-    margin-left: 31px;
-    list-style: none;
 }
 a {
     font-family: "Lato-Black", sans-serif;
@@ -76,7 +59,7 @@ a:hover {
     color:#eeb013 ;
     }
 
-h2 {
+h1 {
     font-family: "Lato-Black", sans-serif;
     font-weight: 600;
     font-size: 72px;
@@ -101,9 +84,9 @@ button {
     height: 54px;
     color: #fffefe;
     background-color: transparent; 
-    span {
+span {
         z-index: 20;
-    }
+}
 }
 button:hover {
     background-color:#fffefe;
@@ -129,11 +112,25 @@ button:hover {
 .header-burger {
     display: none;
 }
-// .swiper-button-next::after {
-    
-// }
-
 }
+.nav {
+    font-size: 18px;
+}
+
+.list {
+    font-family: "Lato-Black", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    text-transform: uppercase;
+li {
+    margin-left: 31px;
+    list-style: none;
+}
+}
+
+
+
 @media (max-width: 1095px) {
 .container {
     justify-content: space-around;
@@ -150,14 +147,13 @@ button:hover {
 
 @media (max-width: 900px) {
 body {
+    min-width: 310px;
 .container .section-txt {
     margin-bottom: 20px;
 }  
-    // overflow: hidden;
-    min-width: 310px;
 .wr-home  {
     padding: 110px 0;  
-h2 {
+h1 {
     font-size: 45px;
 }   
 .wr-home-container-custom {
@@ -175,16 +171,19 @@ header {
 .nav {
     display: contents;
 }
-    }
+}
 .wr-home .container {
     flex-direction: inherit;
     justify-content: space-between;
     padding: 20px 30px;
     height: 100%;
-    .logo  {
-        width: 60px;
-    }    
+.logo  {
+    width: 60px;
 }    
+}  
+body.lock {
+    overflow: hidden;
+}  
 
 .header-burger {
     display: block;
@@ -239,6 +238,7 @@ header {
     height: 100%;
     background-color: #000;
     padding: 70px 0;
+    text-align: center;
 a {
     font-size: 35px;
 }    

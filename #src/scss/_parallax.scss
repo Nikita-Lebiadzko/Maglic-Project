@@ -8,13 +8,14 @@
         height: 320px;
         color: #fff;
 
-.counter-box {
+.container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 80px 40px;
-       }
-
+}
+.counter-item {
+        width: 25%;
+}
 .counter {
         font-family: "Montserrat-regular", serif;
         font-weight: 600;
@@ -31,25 +32,26 @@
         content: "";
         display: block;
         height: 3px;
-        width: 70px;
         background-color: #fff;
-        margin: 30px 45px;
+        margin: 30px;
+}
+}
+@media (max-width: 860px) {
+.parallax-section {
+ .container {
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        padding: 20px 10px;   
+} 
+.counter-item {
+        width: 35%;
+}    
 }
 }
 @media (max-width: 768px) {
 .parallax-section {
 .counter {
         font-size: 32px;
-}        
-.counter-box {
-        padding: 50px 10px;
-        flex-wrap: wrap;
-}   
-.counter-item {
-        width: 50%;
-}  
-.text::after {
-        width: auto;
-} 
+}         
 }
 }

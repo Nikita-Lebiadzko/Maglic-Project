@@ -1,5 +1,6 @@
 .contact {
     background-color:#1c1c1c;
+    text-align: center;
 .container {
     display: flex;
     justify-content: space-between;
@@ -62,6 +63,7 @@ input, textarea {
     background-color: transparent;
     border: none;
     border-bottom: solid 1px #616161;
+    outline: none;
 }   
 }
 input::placeholder, textarea::placeholder {

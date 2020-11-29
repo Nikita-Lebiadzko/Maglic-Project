@@ -61,39 +61,56 @@ let mySwiper = new Swiper('.swiper-container', {
     },
   });
 
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      
+      const blockID = anchor.getAttribute('href').substr(1)
+      
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  };
 
   let btnsFilterContainer = document.querySelector('.filter'); 
-  let removeClass = function(arr, className){
-      arr
-      .filter(btn => btn.classList.contains(className))
-      .map(btn => btn.classList.remove(className));
-  };
-  
-  btnsFilterContainer.addEventListener('click', function(e) {
-      let target = e.target;
-      if (!e.target.closest('button')) return;
-      let btn = e.target.closest('button');
-      if (btn.classList.contains('active')) return;
-      let btns = document.querySelectorAll('.filter button');
-  
-  
-  let arrBtns = Array.prototype.slice.call(btns);
-  
-      removeClass(arrBtns, 'active');
-  
-      btn.classList.add('active');
-  
-      let btnId = btn.id;
-      let blocks = document.querySelectorAll('.block')
-      let arrBlocks = Array.prototype.slice.call(blocks);
-  
-      removeClass(arrBlocks, 'hide');
-      if (btnId == 'all') return;
-  
-      arrBlocks
-      .filter(block => (block.dataset.var != btnId))
-      .map(block => block.classList.add('hide'));
-  });
-  
+let removeClass = function(arr, className){
+    arr
+    .filter(btn => btn.classList.contains(className))
+    .map(btn => btn.classList.remove(className));
+};
 
+btnsFilterContainer.addEventListener('click', function(e) {
+    let target = e.target;
+    if (!e.target.closest('button')) return;
+    let btn = e.target.closest('button');
+    if (btn.classList.contains('active-btn')) return;
+    let btns = document.querySelectorAll('.filter button');
+
+    // for (let i = 0; i < btns.length; i++) {
+    //     let btn = btns[i];
+    //     if (btn.classList.contains('active')) {
+    //         btn.classList.remove('active');
+    //     }
+    // }
+let arrBtns = Array.prototype.slice.call(btns);
+
+    removeClass(arrBtns, 'active-btn');
+
+    btn.classList.add('active-btn');
+
+    let btnId = btn.id;
+    let blocks = document.querySelectorAll('.block')
+    let arrBlocks = Array.prototype.slice.call(blocks);
+
+    removeClass(arrBlocks, 'hide');
+    if (btnId == 'all') return;
+
+    arrBlocks
+    .filter(block => (block.dataset.var != btnId))
+    .map(block => block.classList.add('hide'));
+});
 
