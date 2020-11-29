@@ -458,6 +458,7 @@ body .icon-hummer .line {
   height: 100vh;
   background-position: center;
   color: #fffefe;
+  padding: 60px 0;
 }
 
 .wr-home .wr-home-container-custom {
@@ -474,7 +475,6 @@ body .icon-hummer .line {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
 }
 
 .wr-home a {
@@ -572,10 +572,26 @@ body .icon-hummer .line {
   list-style: none;
 }
 
+.f-nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 55;
+  background-color: #000;
+}
+
+.f-nav .container {
+  height: 10vh;
+}
+
 @media (max-width: 1095px) {
   .container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .container .f-nav {
+    display: none;
   }
   .nav a {
     font-size: 14px;
@@ -593,7 +609,7 @@ body .icon-hummer .line {
     margin-bottom: 20px;
   }
   body .wr-home {
-    padding: 110px 0;
+    padding: 45px 0;
   }
   body .wr-home h1 {
     font-size: 45px;

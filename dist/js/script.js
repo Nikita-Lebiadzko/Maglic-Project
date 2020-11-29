@@ -113,4 +113,16 @@ let arrBtns = Array.prototype.slice.call(btns);
     .filter(block => (block.dataset.var != btnId))
     .map(block => block.classList.add('hide'));
 });
-
+jQuery("document").ready(function($){
+ 
+	var nav = $('header');
+ 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 960) {
+			nav.addClass("f-nav");
+		} else {
+			nav.removeClass("f-nav");
+		}
+	});
+ 
+});

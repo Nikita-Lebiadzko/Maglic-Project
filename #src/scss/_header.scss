@@ -17,9 +17,10 @@ h2 {
 
 .line {
     opacity: 0.3;
-        }
+    }
 }
 }
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
@@ -31,8 +32,8 @@ h2 {
     background-size: cover;
     height: 100vh;
     background-position: center;
-    color: #fffefe;
-    
+    color: #fffefe;  
+    padding: 60px 0;
 
 .wr-home-container-custom {
     margin-top: 25vh;
@@ -41,7 +42,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    
 }
 a {
     font-family: "Lato-Black", sans-serif;
@@ -128,12 +129,26 @@ li {
     list-style: none;
 }
 }
+.f-nav { 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    background-color: #000;  
 
+.container  {
+    height: 10vh;
+}
+}  
 
 
 @media (max-width: 1095px) {
 .container {
     justify-content: space-around;
+.f-nav {
+    display: none; 
+}    
 }
 .nav a {
     font-size: 14px;
@@ -152,7 +167,7 @@ body {
     margin-bottom: 20px;
 }  
 .wr-home  {
-    padding: 110px 0;  
+    padding: 45px 0;  
 h1 {
     font-size: 45px;
 }   
