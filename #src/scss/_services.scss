@@ -99,7 +99,7 @@ h3 {
     height: 38px;
     color: #fffefe;
     background-color: transparent;
-    margin: 0px 15px;
+    margin: 0 10px 15px;
     text-transform: uppercase;
     width: 160px;
     cursor: pointer;
@@ -202,7 +202,7 @@ h6 {
 }    
 }
 .container-custom {
-    padding: 10px 5px;
+    padding: 10px 15px;
 }
 .text-section p {
     font-size: 14px;
@@ -228,16 +228,19 @@ p {
     padding: 5px 5px;
 .filter {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    // flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 10px 0 5px;   
 }
 p {
-    font-size: 11px;
+    font-size: 13px;
 }
 button {
-    height: 20px;
+    height: 45px;
     margin: 5px 15px;
+    width: 35%;
+    font-size: 12px;
 }
 } 
 }

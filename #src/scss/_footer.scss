@@ -1,4 +1,4 @@
-.last-footer {
+footer {
     background-color: #202020;
     padding: 35px 0;
  
@@ -13,9 +13,21 @@
     font-size: 12px;
     color: #fff;
 }
-div:hover .text-block{
+.footer-block-1:hover .text-block{
     color: #f6b138;
 }  
+.footer-block-2:hover .text-block{
+    color: #f6b138;
+}  
+
+.footer-block-3:hover .text-block{
+    color: #f6b138;
+}  
+.footer-block-4:hover .text-block{
+    color: #f6b138;
+}  
+
+
 
 .subtext {
     font-family: "Montserrat-regular", sans-serif;
@@ -56,17 +68,21 @@ p {
     margin-right: 70px;
 }    
 }
-.copygrights {
+.copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+a:hover svg {
+    fill: #f6b138;
+    }   
 .text-coop {
     font-family: "Montserrat-regular", sans-serif;
     font-weight: 400;
     font-size: 11px;
     color: #636363;
     opacity: 0.4;
+    margin-bottom: 20px;
 p {
     margin: 0;
     }
@@ -76,7 +92,7 @@ p {
 svg {
     width: 15px;
     height: 15px;
-    margin: 0 30px;
+    margin: 10px 30px;
     fill:#909090;
     opacity: 0.2;
 }    
@@ -84,17 +100,24 @@ svg {
 }
 
 @media (max-width: 1160px) {
-.last-footer {
-    
-p {
+footer {
+
+.footer-block-2 p, .footer-block-3 p {
     margin: 10px;
-}    
-    .footer-block-1, .footer-block-2, .footer-block-3 {
+}  
+.footer-block-1, .footer-block-2, .footer-block-3 {
     margin-right: 5px;
     border: none;
 }  
 .container {
     text-align: center;
+    
 }  
-}    
+}  
+}
+@media (max-width: 856px) {
+.container .copyright {
+    display: flex;
+    flex-direction: column;
+}
 }

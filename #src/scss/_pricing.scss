@@ -1,5 +1,6 @@
 .plan-pricing {
     text-align: center;
+    padding: 25px 0px;
 .repeat-block {
     margin-bottom: 60px;
 }    
@@ -78,14 +79,14 @@ li {
 span {
     padding: 0 5px;
 }    
-.icons-section {
-    font-family: "Montserrat-regular", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    position: absolute;
-    left: 44px;
-    bottom: 70px;
-}
+// .icons-section {
+//     font-family: "Montserrat-regular", sans-serif;
+//     font-weight: 600;
+//     font-size: 18px;
+//     position: absolute;
+//     left: 44px;
+//     bottom: 70px;
+// }
 .number-section {
     font-family: "Montserrat-regular", sans-serif;
     font-weight: 600;
@@ -137,7 +138,7 @@ span {
     flex-wrap: wrap; 
     justify-content: center;
 .section-plan {
-    width: 37%;
+    width: 42%;
     height: 270px;
     padding: 5px 0;
     margin: 15px 5px;
@@ -146,11 +147,7 @@ span {
 }     
 .text-bottom {
     margin: 0;
-.icons-section {
-    left: 25px;
-    bottom: 40px;
-    opacity: 0.3;
-}  
+ 
 .number-section {
     font-size: 30px;
 }  
@@ -181,7 +178,7 @@ svg {
 .section-plan {
     height: 270px;
 h4 {
-    font-size: 11px;
+    font-size: 12px;
 }    
 .text-bottom .icons-section {
     bottom: 60px;
@@ -189,7 +186,7 @@ h4 {
 }    
 li {
     margin: 11px 0;
-    font-size: 11px;
+    font-size: 12px;
 svg {
     margin-left: 1px;
 }       

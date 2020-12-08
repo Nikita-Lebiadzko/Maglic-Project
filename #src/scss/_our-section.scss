@@ -121,13 +121,13 @@ button:hover {
 .our-team {
 .name-text, .profession-text  {
     left: 5px;
-    font-size: 10px;
+    font-size: 12px;
 }  
 .avatar-section {
     flex-wrap: wrap;
     justify-content: center;
 .avatar {
-    width: 40%;
+    width: 48%;
     height: 100%;
 }    
 }    
@@ -148,10 +148,11 @@ button {
 }
 }
 }   
-@media (max-width: 768px) {
+@media (max-width: 570px) {
 .our-team {
 .name-text, .profession-text {
-    font-size: 5px;
+    font-size: 12px;
+    margin: 5px;
 }
 }
 }

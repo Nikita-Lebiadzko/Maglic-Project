@@ -59,11 +59,14 @@ a {
     margin: 0 5px;
 }
 
-a:focus {
-    color:#eeb013 ;
-    }
+// a:focus {
+//     color:#eeb013 ;
+//     }
 a:hover {
     color:#eeb013 ;
+    }
+a.active{
+    color: #eeb013;
     }
 
 h1 {
@@ -78,8 +81,9 @@ p {
     font-family: "OpenSans-Light", sans-serif;
     font-weight: 100;
     font-size: 20px;
-    margin-bottom: 49px;
+    // margin-bottom: 49px;
     opacity: 0.6;
+    margin: 0 15px 49px;
 }
 
 button {
@@ -122,6 +126,7 @@ button:hover {
 }
 .nav {
     font-size: 18px;
+
 }
 
 .list {
@@ -145,11 +150,15 @@ li {
 
 .container  {
     height: 10vh;
+    padding: 0 20px;
 }
 }  
 
 
 @media (max-width: 1095px) {
+.wr-home {
+    height: 90vh;
+}    
 .container {
     justify-content: space-around;
 .f-nav {
@@ -157,7 +166,7 @@ li {
 }    
 }
 .nav a {
-    font-size: 14px;
+    font-size: 12px;
 }
 .swiper-header {
 .swiper-button-next,.swiper-button-prev  {
@@ -175,10 +184,10 @@ body {
 .wr-home  {
     padding: 45px 0;  
 h1 {
-    font-size: 45px;
+    font-size: 35px;
 }   
 .wr-home-container-custom {
-    margin-top: 35vh;
+    margin-top: 25vh;
 }   
 }  
 header {

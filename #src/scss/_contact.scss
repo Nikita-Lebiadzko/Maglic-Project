@@ -7,8 +7,12 @@
     padding: 50px 0;
 a {
     text-decoration: none;
-}    
+    margin: 10px;
+}  
 }
+textarea:focus,input:focus,.container a:focus {
+    outline: solid 1px #f6b138; 
+}   
 }
 .container-contact {
     display: flex;
@@ -39,6 +43,7 @@ p {
     height: 75px;
     border-radius: 50%;
     border: solid 2px #5b5b5b;
+    
 } 
 .contact-icon-text {
     color: #fff;
@@ -63,8 +68,8 @@ input, textarea {
     background-color: transparent;
     border: none;
     border-bottom: solid 1px #616161;
-    outline: none;
-}   
+    
+}  
 }
 input::placeholder, textarea::placeholder {
     font-family: "OpenSans-LightItalic", sans-serif;
@@ -121,12 +126,13 @@ svg {
 p {
     color: #eeb013;
 }
-    .contact-icon:after  {
+.contact-icon:after  {
     background-color: #eeb013; 
     z-index: 15;
     transition: 0.9s;
 }  
 }
+
 
 
 @media (max-width: 855px) {
@@ -137,6 +143,9 @@ input {
 }    
 }
 .container {
+.contact-icon:after {
+    margin-bottom: 10px;
+}
     flex-direction: column;
 .container-contact {
     flex-direction: column;

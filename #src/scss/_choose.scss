@@ -69,8 +69,8 @@ strong {
 .features-block, .features-block-border {
     display: flex;
     text-align: center;
-    width: 28%;
-    margin: 10px 20px;
+    width: 32%;
+    margin: 20px 10px 5px 0;
 }
 .features-section {
     display: flex;
@@ -125,15 +125,20 @@ h6 {
 }   
 .features-block-border {
     border-bottom: solid 2px #6f6f6f;
-    border-bottom-width: 50%;
 }  
 } 
 
 @media (max-width: 1050px) {
+.features-block, .features-block-border {
+    width: 45%;
+}
 .features-section {
     justify-content: space-around;
+.features-section-icon {
+    margin-right: 15px;
+}
 h6 {
-    font-size: 10px;
+    font-size: 12px;
 }     
 .features-block-border {
     border: none;
@@ -196,8 +201,8 @@ strong {
 }
 .features-section {
     padding: 20px 10px;
-    .text-regular {
-        font-size: 8px;
+.text-regular {
+    font-size: 12px;
     }  
 }
 .features-section-container {

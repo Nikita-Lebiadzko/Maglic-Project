@@ -62,19 +62,32 @@ let mySwiper = new Swiper('.swiper-container', {
   });
 
   const anchors = document.querySelectorAll('a[href*="#"]')
-
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault()
-      
-      const blockID = anchor.getAttribute('href').substr(1)
-      
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+  for( let anchor of anchors) {
+    anchor.addEventListener("click", function(e){
+      e.preventDefault();
+      const blockID = anchor.getAttribute('href')
+      const fixedHeaderHeight = 92;
+      const top = document.querySelector('' + blockID).offsetTop - fixedHeaderHeight;
+      window.scrollTo({
+        top,
+        left: 0,
+        behavior: "smooth",
       })
     })
   };
+
+  // for (let anchor of anchors) {
+  //   anchor.addEventListener('click', function (e) {
+  //     e.preventDefault()
+      
+  //     const blockID = anchor.getAttribute('href').substr(1)
+      
+  //     document.getElementById(blockID).scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start'
+  //     })
+  //   })
+  // };
 
   let btnsFilterContainer = document.querySelector('.filter'); 
 let removeClass = function(arr, className){
@@ -123,6 +136,23 @@ jQuery("document").ready(function($){
 		} else {
 			nav.removeClass("f-nav");
 		}
-	});
- 
+	})
 });
+
+
+$(window).scroll(function(){
+  var $sections = $('section');
+$sections.each(function(i,el){
+ var top  = $(el).offset().top-100;
+ var bottom = top +$(el).height();
+ var scroll = $(window).scrollTop();
+ var id = $(el).attr('id');
+if( scroll > top && scroll < bottom){
+     $('a.active').removeClass('active');
+$('a[href="#'+id+'"]').addClass('active');
+
+ }
+})
+});
+
+
