@@ -126,14 +126,13 @@ img {
     background-color: transparent;
 }
 .testimonial .text-swiper {
-    font-size: 13px;
+    font-size: 18px;
 }  
 }
 
 @media (max-width: 1000px) {
 .testimonial {
     
-height: 95vh;
 .swiper-container {
     width: 50%;
     height: 70%;
@@ -157,7 +156,7 @@ height: 95vh;
 @media (max-width: 700px) {
 
 .testimonial {
-    height: 60vh;
+    height: 82vh;
 h2 {
     letter-spacing: 5px;
 }
@@ -168,7 +167,7 @@ img {
     height: 97px;
 }    
 .text-swiper {
-    font-size: 12px;
+    
     line-height: normal;
    
 }   
@@ -184,18 +183,32 @@ img {
 }
 }
 .testimonial .bottom-text {
-    bottom: 20px;
+    bottom: auto;
+    height: auto;
+    padding: 0;
  button {
     font-size: 12px;
-    width: 110px;
+    width: 135px;
     height: 30px;
 }
 }
 }
 }
 @media (max-width: 500px) {
-    .testimonial .swiper-container img {
-        width: 65px;
-        height: 65px;
-    }   
+.testimonial {
+    height: 100vh;
+.swiper-container {
+    height: 50%;
+.text-swiper {
+    font-size: 14px;
+}  
+img {
+    width: 65px;
+    height: 65px;
+}
+}
+.desc-swiper,.excerpt {
+     display: none;
+}    
+}
 }
