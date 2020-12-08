@@ -1637,15 +1637,14 @@ body .theme-color {
   .testimonial .bottom-text {
     background-color: transparent;
   }
-}
-
-.testimonial .text-swiper {
-  font-size: 13px;
+  .testimonial .text-swiper {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 1000px) {
   .testimonial {
-    height: 80vh;
+    height: 95vh;
   }
   .testimonial .swiper-container {
     width: 50%;
