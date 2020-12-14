@@ -1305,7 +1305,7 @@ body .theme-color {
 
 .our-team {
   text-align: center;
-  padding: 55px 10px;
+  padding: 40px 10px;
 }
 
 .our-team .team {
@@ -1719,7 +1719,7 @@ body .theme-color {
 
 .our-blog {
   text-align: center;
-  margin: 70px 0;
+  padding: 40px 0;
 }
 
 .our-blog .repeat-block {
@@ -1861,7 +1861,7 @@ body .theme-color {
 
 .plan-pricing {
   text-align: center;
-  padding: 25px 0px;
+  padding: 40px 0px;
 }
 
 .plan-pricing .repeat-block {
@@ -1895,7 +1895,7 @@ body .theme-color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 25px 0;
+  padding: 40px 0;
 }
 
 .section-plan {
@@ -2015,6 +2015,9 @@ body .theme-color {
     padding: 5px 0;
     margin: 15px 5px;
   }
+  .section-block .section-plan h4 {
+    padding: 10px;
+  }
   .section-block .section-plan .get {
     width: 100%;
   }
@@ -2078,7 +2081,7 @@ body .theme-color {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .contact .container a {
@@ -2302,10 +2305,11 @@ input::placeholder, textarea::placeholder {
     margin-bottom: 35px;
   }
   .container .form-textaria textarea {
-    height: 115px;
+    height: 80px;
   }
   .container .form-email, .container .form-name, .container .form-subject {
     width: 100%;
+    margin-bottom: 10px;
   }
   .container .form-button button {
     width: 140px;
@@ -2425,10 +2429,13 @@ footer a:hover {
   margin: 0;
 }
 
+.copyright .svg-coop a {
+  margin: 10px 30px;
+}
+
 .copyright .svg-coop svg {
   width: 15px;
   height: 15px;
-  margin: 10px 30px;
   fill: #909090;
   opacity: 0.2;
 }

@@ -27,8 +27,6 @@ footer {
     color: #f6b138;
 }  
 
-
-
 .subtext {
     font-family: "Montserrat-regular", sans-serif;
     font-weight: 400;
@@ -88,11 +86,12 @@ p {
     }
 }
 .svg-coop {
-    
+a {
+    margin: 10px 30px;
+}    
 svg {
     width: 15px;
     height: 15px;
-    margin: 10px 30px;
     fill:#909090;
     opacity: 0.2;
 }    

@@ -4,7 +4,7 @@
 .container {
     display: flex;
     justify-content: space-between;
-    padding: 50px 0;
+    padding: 40px 0;
 a {
     text-decoration: none;
     margin: 10px;
@@ -152,10 +152,11 @@ input {
     margin-bottom: 35px;
 }    
 .form-textaria textarea {
-    height: 115px;
+    height: 80px;
 }
 .form-email, .form-name, .form-subject {
     width: 100%;
+    margin-bottom: 10px;
 }
 .form-button button {
     width: 140px;
